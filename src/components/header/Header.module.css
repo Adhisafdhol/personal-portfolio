@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2.5vw;
+  color: var(--color-main);
+}
+
+.h1 {
+  font-size: clamp(1.5rem, calc(2.25rem + 0.5vw), 3rem );
+  margin-top: 0;
+  font-family: "inter";
+  font-weight: 700;
+}
+
+.intro {
+  font-size: clamp(1rem, calc(1.1rem + 0.5vw), 2rem);
+  margin: 0;
+  padding: 0;
+}
+
+.ad {
+  font-style: italic;
+  font-size: 1.15em;
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="aadheus-minimalistic-favicon-logo-blue-green.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.5"
+     inkscape:cx="309"
+     inkscape:cy="205"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g23" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient4"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#7fe658;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+      <stop
+         style="stop-color:#4cb0ce;stop-opacity:1;"
+         offset="0.50793654"
+         id="stop6" />
+      <stop
+         style="stop-color:#1e189c;stop-opacity:1;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4"
+       id="linearGradient5"
+       x1="41.775389"
+       y1="234.3483"
+       x2="469.77148"
+       y2="234.3483"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g23"
+       transform="translate(0,-3.9996694)"
+       style="display:inline">
+      <g
+         id="g22"
+         transform="translate(0.2265655,25.651372)"
+         style="fill:url(#linearGradient5)">
+        <path
+           id="path19"
+           style="display:inline;opacity:1;fill:url(#linearGradient5);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:fill markers stroke"
+           inkscape:label="path1"
+           d="M 240.83789,68.146154 41.775389,294.18131 42.734373,295.0485 C 79.198852,258.59325 149.0988,197.35206 193.01953,214.84733 c 59.80757,23.82351 76.65171,169.45305 78.25976,184.67578 0.004,-0.007 0.008,-0.0112 0.0137,-0.0176 0.005,-0.007 0.0106,-0.0135 0.0156,-0.0195 0.009,-0.0107 0.0189,-0.0203 0.0293,-0.0293 l 0.002,-0.002 c 10e-4,-10e-4 0.003,-0.002 0.004,-0.004 z m -22.21485,68.152346 25.55079,141.74609 c 0,0 -27.48668,-102.76618 -37.22071,-105.94726 -9.71604,-3.17554 -101.63476,64.79687 -101.63476,64.79687 z" />
+        <path
+           id="path22"
+           style="display:inline;opacity:1;fill:url(#linearGradient5);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:fill markers stroke"
+           inkscape:label="path1"
+           d="m 239.93359,69.175451 c -0.003,0.0045 -0.008,0.009 -0.0117,0.01367 -0.009,0.01 -0.0174,0.02112 -0.0254,0.03125 -0.01,0.01107 -0.0194,0.0223 -0.0293,0.0332 l 30.5039,331.296869 199.40039,-226.42187 -1.01172,-0.84571 C 432.46083,209.66024 362.324,271.42965 318.18945,253.84928 258.16428,229.93898 241.43152,83.454178 239.93359,69.175451 Z m 27.10156,121.476559 c 0,0 27.48677,102.76418 37.22071,105.94532 9.71598,3.17542 100.8164,-63.79297 100.8164,-63.79297 l -112.48632,99.59375 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:66.6667px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;direction:rtl;display:none;opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:fill markers stroke"
+         x="403.77026"
+         y="453.42056"
+         id="text10"><tspan
+           sodipodi:role="line"
+           id="tspan10"
+           x="403.77026"
+           y="453.42056">Aadheuss</tspan></text>
+    </g>
+    <path
+       style="fill:#333333;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;paint-order:fill markers stroke"
+       d="m 236.375,88.25 14.0625,-3.5 v 0"
+       id="path9" />
+  </g>
+</svg>
