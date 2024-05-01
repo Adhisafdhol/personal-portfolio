@@ -1,12 +1,10 @@
 import styles from "./Nav.module.css";
-import favicon from "/favicon.svg";
 
 function Nav() {
   return (
     <nav className={styles.nav}>
-      <a href="/" aria-label="Home">
-        <img src={favicon} width="100px" height="100px" alt="aadheuss" />
-      </a>
+      <a className={styles.icon} href="/" aria-label="Home"></a>
+      <a href="*">Contact</a>
     </nav>
   );
 }

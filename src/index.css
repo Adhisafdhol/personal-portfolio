@@ -30,6 +30,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('../public/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff2') format('woff2'),
+    url('../public/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   font-family: "open-sans", "inter", "ibm-plex-sans", system-ui, sans-serif;
   line-height: 1.5;
@@ -52,8 +60,9 @@
 }
 
 a {
+  font-family: "ibm-plex-sans", "open-sans", "inter", sans-serif;
   font-weight: 500;
-  color: #646cff;
+  color: var(--color-main);
   text-decoration: inherit;
 }
 a:hover {
