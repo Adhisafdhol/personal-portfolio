@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: 'inter';
+  src: url('../public/fonts/inter/Inter-SemiBold.woff2') format('woff2'),
+    url('../public/fonts/inter/Inter-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'open-sans';
   src: url('../public/fonts/open-sans/OpenSans-Semibold.woff2') format('woff2'),
     url('../public/fonts/open-sans/OpenSans-Semibold.woff') format('woff');
@@ -27,6 +35,22 @@
   src: url('../public/fonts/open-sans/OpenSans.woff2') format('woff2'),
     url('../public/fonts/open-sans/OpenSans-Semibold.woff') format('woff');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('../public/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff2') format('woff2'),
+    url('../public/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('../public/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff2') format('woff2'),
+    url('../public/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -49,9 +73,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   --color-accent-light: #D9E4EC;
-  --color-accent:  #6AABD2;
+  --color-accent: #4cb0ce;
   --color-accent-dark: #4169e1;
   --color-bg: #FDFFFF;
+  --color-bg-dark: #f7fbfc;
   --color-main: #1f1f1f;
 
   color-scheme: light dark;

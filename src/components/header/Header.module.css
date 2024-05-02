@@ -1,12 +1,15 @@
 .header {
   display: flex;
-  gap: 1.5rem;
   flex-direction: column;
   align-items: start;
   padding: 1.5vw 3vw;
-  background-color: #f7fbfc;
+  background-color: var(--color-bg-dark);
   color: var(--color-main);
   text-align: start;
+}
+
+.headerItem {
+  padding: 2.5vw 2.5vw 5vw 2.5vw;
 }
 
 .h1 {
