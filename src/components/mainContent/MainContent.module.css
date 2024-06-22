@@ -3,6 +3,18 @@
   background-color: var(--color-accent);
 }
 
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  max-width: 72ch;
+  text-align: start;
+  font-weight: 600;
+  font-size: clamp(0.9rem, calc(1.05rem + 0.25vw), 1.5rem);
+}
+
 .projectContainer {
   display: flex;
   flex-direction: column;
