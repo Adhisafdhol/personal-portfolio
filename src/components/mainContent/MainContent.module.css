@@ -6,6 +6,7 @@
 .aboutMeContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .text {
@@ -13,6 +14,13 @@
   text-align: start;
   font-weight: 600;
   font-size: clamp(0.9rem, calc(1.05rem + 0.25vw), 1.5rem);
+}
+
+.textCenter {
+  composes: text;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .projectContainer {

@@ -5,7 +5,7 @@ function MainContent() {
     <main className={styles.main}>
       <section className={styles.aboutMeContainer}>
         <h1 className={styles.heading}>About me</h1>
-        <p className={styles.text}>
+        <p className={styles.textCenter}>
           A self-taught fullstack web developer with passion in design and
           programming. Two years ago I stumbled into the Odin project website
           when I was searching about how to program, and I have been learning
@@ -14,7 +14,7 @@ function MainContent() {
           developer.
         </p>
       </section>
-      <div className={styles.projectContainer}>
+      <section className={styles.projectContainer}>
         <h2 className={styles.heading}>Projects</h2>
         <ul className={styles.projectList}>
           <li className={styles.projectItem}>
@@ -30,7 +30,7 @@ function MainContent() {
             <p>Details</p>
           </li>
         </ul>
-      </div>
+      </section>
     </main>
   );
 }
