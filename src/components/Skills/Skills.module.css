@@ -92,6 +92,7 @@
   background: var(--brand-gradient-reverse);
   border-radius: 16px;
   gap: 96px;
+  padding: 96px 0;
 }
 
 .skillList {
@@ -99,12 +100,19 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
   gap: 8px;
 }
 
 .skillListOne {
   display: flex;
   gap: 96px;
+}
+
+.skillListTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .skillListHeading {
