@@ -85,6 +85,7 @@
   --color-black-3: #949da0;
   --color-black-4: #cacecf;
   --brand-gradient: linear-gradient(
+    to right,
     var(--brand-color-2),
     var(--brand-color-1),
     var(--brand-color-3)
