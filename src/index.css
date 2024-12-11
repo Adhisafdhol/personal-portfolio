@@ -90,6 +90,12 @@
     var(--brand-color-1),
     var(--brand-color-3)
   );
+  --brand-gradient-reverse: linear-gradient(
+    to left,
+    var(--brand-color-2),
+    var(--brand-color-1),
+    var(--brand-color-3)
+  );
   --font-h1: 90px;
   --font-h2: 67px;
   --font-h3: 51px;
