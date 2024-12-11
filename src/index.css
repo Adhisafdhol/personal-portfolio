@@ -1,63 +1,66 @@
 @font-face {
-  font-family: 'inter';
-  src: url('../public/fonts/inter/Inter-Bold.woff2') format('woff2'),
-    url('../public/fonts/inter/Inter-Bold.woff') format('woff');
+  font-family: "inter";
+  src: url("./assets/fonts/inter/Inter-Bold.woff2") format("woff2"),
+    url("./assets/fonts/inter/Inter-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'inter';
-  src: url('../public/fonts/inter/Inter-BoldItalic.woff2') format('woff2'),
-    url('../public/fonts/inter/Inter-BoldItalic.woff') format('woff');
+  font-family: "inter";
+  src: url("./assets/fonts/inter/Inter-BoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/inter/Inter-BoldItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'inter';
-  src: url('../public/fonts/inter/Inter-SemiBold.woff2') format('woff2'),
-    url('../public/fonts/inter/Inter-SemiBold.woff') format('woff');
+  font-family: "inter";
+  src: url("./assets/fonts/inter/Inter-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/inter/Inter-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'open-sans';
-  src: url('../public/fonts/open-sans/OpenSans-Semibold.woff2') format('woff2'),
-    url('../public/fonts/open-sans/OpenSans-Semibold.woff') format('woff');
+  font-family: "open-sans";
+  src: url("./assets/fonts/open-sans/OpenSans-Semibold.woff2") format("woff2"),
+    url("./assets/fonts/open-sans/OpenSans-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'open-sans';
-  src: url('../public/fonts/open-sans/OpenSans.woff2') format('woff2'),
-    url('../public/fonts/open-sans/OpenSans-Semibold.woff') format('woff');
+  font-family: "open-sans";
+  src: url("./assets/fonts/open-sans/OpenSans.woff2") format("woff2"),
+    url("./assets/fonts/open-sans/OpenSans-Semibold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ibm-plex-sans';
-  src: url('../public/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff2') format('woff2'),
-    url('../public/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff') format('woff');
+  font-family: "ibm-plex-sans";
+  src: url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff2")
+      format("woff2"),
+    url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ibm-plex-sans';
-  src: url('../public/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff2') format('woff2'),
-    url('../public/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff') format('woff');
+  font-family: "ibm-plex-sans";
+  src: url("./assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff2")
+      format("woff2"),
+    url("./assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ibm-plex-sans';
-  src: url('../public/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff2') format('woff2'),
-    url('../public/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff') format('woff');
+  font-family: "ibm-plex-sans";
+  src: url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff2")
+      format("woff2"),
+    url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -72,26 +75,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-accent-light: #D9E4EC;
-  --color-accent: #4cb0ce;
-  --color-accent-dark: #4169e1;
-  --color-bg: #FDFFFF;
-  --color-bg-dark: #f7fbfc;
-  --color-main: #1f1f1f;
-
+  --brand-color-1: #4cb0ce;
+  --brand-color-2: #4ccf97;
+  --brand-color-3: #4c87cf;
+  --color-white-1: #f4f5f5;
+  --color-white-2: #eaeced;
+  --color-black-1: #0f2329;
+  --color-black-2: #606d71;
+  --color-black-3: #949da0;
+  --color-black-4: #cacecf;
+  --brand-gradient: linear-gradient(
+    var(--brand-color-2),
+    var(--brand-color-1),
+    var(--brand-color-3)
+  );
+  --font-h1: 90px;
+  --font-h2: 67px;
+  --font-h3: 51px;
+  --font-h4: 38px;
+  --font-h5: 28px;
+  --font-h6: 21px;
+  --font-base: 16px;
+  --font-small: 12px;
   color-scheme: light dark;
-  color: #000000;
-  background-color: var(--color-bg);
+  color: var(--color-black-1);
+  background-color: var(--color-white-1);
 }
 
 a {
   font-family: "ibm-plex-sans", "open-sans", "inter", sans-serif;
   font-weight: 500;
-  color: var(--color-main);
   text-decoration: inherit;
-}
-a:hover {
-  color: #747bff;
 }
 
 body {
@@ -103,8 +117,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: var(--font-h1);
+  line-height: 1.25;
 }
 
 button {
@@ -126,16 +140,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    color: rgba(255, 255, 255, 0.87);
-      background-color: #242424;
-  }
-  a:hover {
-    color: #535bf2;
-  }
-  button {
-    background-color: #1a1a1a;
-  }
-} */
