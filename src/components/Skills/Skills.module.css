@@ -22,7 +22,7 @@
 .mainSkillHeading {
   margin: 0;
   font-family: "ibm-plex-sans", sans-serif;
-  line-height: 1.5;
+  line-height: 1.25;
   font-size: var(--font-h3);
   color: var(--color-white-1);
 }
@@ -37,6 +37,7 @@
   font-family: "open-sans", sans-serif;
   font-size: var(--font-h4);
   color: var(--color-black-2);
+  line-height: 1.25;
   font-weight: 400;
   padding: 32px;
   border-radius: 16px;
@@ -109,7 +110,7 @@
 .skillListHeading {
   margin: 0;
   margin-bottom: 24px;
-  line-height: 1.5;
+  line-height: 1.25;
   font-size: var(--font-h3);
 }
 
