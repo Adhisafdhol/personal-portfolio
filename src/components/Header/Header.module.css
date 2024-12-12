@@ -90,3 +90,33 @@
     font-size: var(--font-h6);
   }
 }
+
+@media screen and (max-width: 799px) {
+  .header {
+    padding: 48px;
+  }
+
+  .logo {
+    width: 96px;
+    height: auto;
+  }
+
+  .headerIntro {
+    gap: 32px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .h1 {
+    font-size: var(--font-h4);
+  }
+
+  .role {
+    font-size: var(--font-h6);
+    line-height: 1.5;
+  }
+
+  .intro {
+    font-size: var(--font-base);
+  }
+}

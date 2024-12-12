@@ -54,7 +54,7 @@ footer {
   margin: 0;
 }
 
-@media screen and (max-screen: 1199px) {
+@media screen and (max-width: 1199px) {
   .copyrightText {
     font-size: var(--font-small);
   }

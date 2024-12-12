@@ -104,6 +104,7 @@
 }
 
 .jyronueImageContainer {
+  align-self: center;
   border-radius: 0;
   position: relative;
   margin-top: 96px;
@@ -173,6 +174,9 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .projectList {
+    gap: 96px;
+  }
   .imageItem {
     width: 360px;
     height: 200px;
@@ -183,6 +187,7 @@
   }
 
   .battleshipContainer {
+    justify-content: center;
     margin: 0;
     border-radius: 0;
   }
@@ -234,5 +239,59 @@
     position: absolute;
     left: 272px;
     top: 96px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .projectsHeading {
+    margin: 32px 0;
+  }
+
+  .imageItem {
+    width: 240px;
+    height: 135px;
+    border-radius: 8px;
+  }
+
+  .projectsHeading {
+    padding: 0 16px;
+  }
+
+  .battleship {
+    padding: 64px 32px;
+  }
+
+  .jyronue {
+    padding: 64px 16px;
+  }
+
+  .battleshipImageItemTwo {
+    composes: imageItem;
+    position: absolute;
+    top: 32px;
+    left: 96px;
+    box-shadow: -8px -8px var(--color-white-1);
+  }
+
+  .jyronueImageContainer {
+    border-radius: 0;
+    position: relative;
+    margin-top: 36px;
+    padding-right: 184px;
+    padding-bottom: 64px;
+  }
+
+  .jyronueImageItemTwo {
+    composes: jyronueImageItem;
+    position: absolute;
+    left: 88px;
+    top: -36px;
+  }
+
+  .jyronueImageItemThree {
+    composes: jyronueImageItem;
+    position: absolute;
+    left: 184px;
+    top: 64px;
   }
 }

@@ -181,3 +181,38 @@
     font-size: var(--font-h6);
   }
 }
+
+@media screen and (max-width: 799px) {
+  .skills {
+    padding: 48px 32px;
+  }
+
+  .skillListContainer {
+    gap: 32px;
+  }
+
+  .skillListOne {
+    gap: 32px;
+  }
+
+  .skillListTwo {
+    gap: 32px;
+  }
+
+  .mainSkillHeading {
+    font-size: var(--font-h4);
+  }
+
+  .mainSkill {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 32px 12px;
+  }
+
+  .skillIcon {
+    width: 48px;
+    height: 48px;
+    background-size: 48px auto;
+  }
+}
