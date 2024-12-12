@@ -41,3 +41,15 @@
 .read-the-docs {
   color: #888;
 }
+
+footer {
+  padding: 32px;
+}
+
+.copyrightText {
+  font-size: var(--font-base);
+  line-height: 1.5;
+  font-family: "open-sans", sans-serif;
+  color: var(--color-black-2);
+  margin: 0;
+}

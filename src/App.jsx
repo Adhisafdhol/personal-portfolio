@@ -13,6 +13,11 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <footer>
+        <p className="copyrightText">
+          © Copyright Aadheuss 2024. All rights reserved
+        </p>
+      </footer>
     </>
   );
 }
