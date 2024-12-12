@@ -1,0 +1,93 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 240px 64px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  width: 1080px;
+}
+
+.contactHeading {
+  font-family: "ibm-plex-sans", sans-serif;
+  font-weight: 700;
+  font-size: var(--font-h1);
+  line-height: 1.25;
+  text-align: start;
+  margin: 0;
+}
+
+.contactText {
+  font-size: var(--font-h5);
+  font-family: "open-sans", sans-serif;
+  line-height: 1.5;
+  text-align: start;
+  color: var(--color-black-2);
+  margin: 0;
+}
+
+.address {
+  display: flex;
+  justify-content: start;
+}
+
+.email {
+  font-size: var(--font-base);
+  font-family: "open-sans", sans-serif;
+  line-height: 1.5;
+  text-align: start;
+  color: var(--color-black-2);
+}
+
+.email:hover {
+  color: var(--brand-color-2);
+}
+
+.githubButton {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 32px 56px;
+  background-color: var(--brand-color-3);
+  border-radius: 0 50px 50px 0;
+  transition: background-color 3s ease-out;
+}
+
+.githubButton:hover {
+  background: var(--brand-gradient-reverse);
+  transition: background 3s ease-in;
+}
+
+.githubButton:active {
+  background-color: var(--brand-color-2);
+  transition: background 3s ease-in;
+}
+
+.githubLink {
+  color: var(--color-white-1);
+  font-size: var(--font-h4);
+  font-family: "open-sans", sans-serif;
+  line-height: 1.25;
+  font-weight: 400;
+  margin: 0;
+}
+
+.githubLogo {
+  display: flex;
+  width: calc(var(--font-h4) * 1.25);
+  height: calc(var(--font-h4) * 1.25);
+}
+
+.githubLogo::before {
+  width: calc(var(--font-h4) * 1.25);
+  height: calc(var(--font-h4) * 1.25);
+  content: " ";
+  background: url("../../assets/images/github-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
