@@ -61,7 +61,7 @@
 
 .imageItem {
   width: 640px;
-  height: 320px;
+  height: 360px;
   border-radius: 16px;
 }
 
@@ -133,17 +133,22 @@
 @media screen and (max-width: 1599px) {
   .imageItem {
     width: 560px;
-    height: 280px;
+    height: 315px;
   }
 
   .battleshipImageContainer {
-    padding-right: 164px;
+    padding-right: 168px;
     padding-bottom: 88px;
   }
 
   .battleshipImageItemTwo {
     top: 88px;
-    left: 164px;
+    left: 168px;
+  }
+
+  .jyronueImageContainer {
+    padding-right: 480px;
+    padding-bottom: 168px;
   }
 
   .jyronueImageContainer {
@@ -170,7 +175,7 @@
 @media screen and (max-width: 1199px) {
   .imageItem {
     width: 360px;
-    height: 180px;
+    height: 200px;
   }
 
   .projectsHeading {
