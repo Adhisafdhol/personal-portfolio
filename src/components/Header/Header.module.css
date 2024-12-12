@@ -65,3 +65,28 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    width: 128px;
+    height: auto;
+  }
+
+  .headerIntro {
+    gap: 64px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .h1 {
+    font-size: var(--font-h2);
+  }
+
+  .role {
+    font-size: var(--font-h5);
+  }
+
+  .intro {
+    font-size: var(--font-h6);
+  }
+}

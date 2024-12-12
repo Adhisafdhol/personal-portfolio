@@ -5,7 +5,7 @@
 
 .projectsHeading {
   padding: 0 64px;
-  margin: 96px;
+  margin: 96px 0;
   font-family: "ibm-plex-sans", sans-serif;
   line-height: 1.25;
   font-size: var(--font-h3);
@@ -134,5 +134,70 @@
   .imageItem {
     width: 560px;
     height: 280px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .imageItem {
+    width: 360px;
+    height: 180px;
+  }
+
+  .projectsHeading {
+    padding: 0 32px;
+  }
+
+  .battleshipContainer {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .battleshipHeading {
+    font-size: var(--font-h4);
+  }
+
+  .battleshipImageContainer {
+    position: relative;
+    padding-right: 96px;
+    padding-bottom: 56px;
+  }
+
+  .battleshipImageItemTwo {
+    composes: imageItem;
+    position: absolute;
+    top: 56px;
+    left: 96px;
+    box-shadow: -16px -16px var(--color-white-1);
+  }
+
+  .jyronueImageContainer {
+    border-radius: 0;
+    position: relative;
+    margin-top: 56px;
+    padding-right: 272px;
+    padding-bottom: 96px;
+  }
+
+  .jyronueHeading {
+    font-size: var(--font-h4);
+  }
+
+  .jyronueImageItem {
+    composes: imageItem;
+    border-radius: 0;
+  }
+
+  .jyronueImageItemTwo {
+    composes: jyronueImageItem;
+    position: absolute;
+    left: 136px;
+    top: -56px;
+  }
+
+  .jyronueImageItemThree {
+    composes: jyronueImageItem;
+    position: absolute;
+    left: 272px;
+    top: 96px;
   }
 }

@@ -10,25 +10,25 @@ const Skills = () => {
             <div className={styles.html}></div>
           </div>
 
-          <p className={styles.text}>HTML</p>
+          <p className={styles.mainSkillText}>HTML</p>
         </div>
         <div className={styles.mainSkillItem}>
           <div className={styles.skillIconContainer}>
             <div className={styles.css}></div>
           </div>
-          <p className={styles.text}>CSS</p>
+          <p className={styles.mainSkillText}>CSS</p>
         </div>
         <div className={styles.mainSkillItem}>
           <div className={styles.skillIconContainer}>
             <div className={styles.javascript}></div>
           </div>
-          <p className={styles.text}>Javascript</p>
+          <p className={styles.mainSkillText}>Javascript</p>
         </div>
         <div className={styles.mainSkillItem}>
           <div className={styles.skillIconContainer}>
             <div className={styles.typescript}></div>
           </div>
-          <p className={styles.text}>Typescript</p>
+          <p className={styles.mainSkillText}>Typescript</p>
         </div>
       </div>
       <div className={styles.skillListContainer}>

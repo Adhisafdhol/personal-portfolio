@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 240px 64px;
+  margin: 0 64px;
 }
 
 .contact {
@@ -51,7 +52,7 @@
   display: flex;
   gap: 32px;
   align-items: center;
-  padding: 32px 56px;
+  padding: 32px 64px;
   background-color: var(--brand-color-3);
   border-radius: 0 50px 50px 0;
   transition: background-color 3s ease-out;
@@ -90,4 +91,42 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .contactContainer {
+    margin: 0 32px;
+  }
+  .contactHeading {
+    font-size: var(--font-h3);
+  }
+
+  .contactText {
+    font-size: var(--font-h6);
+  }
+
+  .address {
+    display: flex;
+    justify-content: start;
+  }
+
+  .email {
+    font-size: var(--font-small);
+  }
+
+  .githubLink {
+    font-size: var(--font-h6);
+    line-height: 1.5;
+  }
+
+  .githubLogo {
+    display: flex;
+    width: calc(var(--font-h6) * 1.5);
+    height: calc(var(--font-h6) * 1.5);
+  }
+
+  .githubLogo::before {
+    width: calc(var(--font-h6) * 1.5);
+    height: calc(var(--font-h6) * 1.5);
+  }
 }
