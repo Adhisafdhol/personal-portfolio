@@ -59,3 +59,9 @@ footer {
     font-size: var(--font-small);
   }
 }
+
+@media screen and (max-width: 449px) {
+  footer {
+    padding: 16px;
+  }
+}

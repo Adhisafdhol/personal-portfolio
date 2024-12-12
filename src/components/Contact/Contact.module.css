@@ -168,3 +168,27 @@
     height: calc(var(--font-base) * 1.5);
   }
 }
+
+@media screen and (max-width: 449px) {
+  .contactContainer {
+    gap: 8px;
+    margin: 0 16px;
+    padding: 80px 16px;
+  }
+
+  .contact {
+    gap: 16px;
+  }
+
+  .contactHeading {
+    font-size: var(--font-h5);
+  }
+
+  .contactText {
+    font-size: var(--font-base);
+  }
+
+  .githubButton {
+    padding: 8px 16px;
+  }
+}

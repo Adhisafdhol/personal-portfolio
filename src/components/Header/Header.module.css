@@ -42,6 +42,7 @@
   font-size: var(--font-h5);
   line-height: 1.5;
   text-align: start;
+  margin: 0;
 }
 
 .logo {
@@ -118,5 +119,33 @@
 
   .intro {
     font-size: var(--font-base);
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .header {
+    padding: 32px 16px;
+  }
+
+  .logo {
+    width: 64px;
+    height: auto;
+  }
+
+  .headerIntro {
+    padding: 32px 0;
+    gap: 16px;
+  }
+
+  .h1 {
+    font-size: var(--font-h5);
+  }
+
+  .role {
+    font-size: var(--font-base);
+  }
+
+  .intro {
+    font-size: var(--font-small);
   }
 }
