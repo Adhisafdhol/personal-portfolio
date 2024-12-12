@@ -135,6 +135,36 @@
     width: 560px;
     height: 280px;
   }
+
+  .battleshipImageContainer {
+    padding-right: 164px;
+    padding-bottom: 88px;
+  }
+
+  .battleshipImageItemTwo {
+    top: 88px;
+    left: 164px;
+  }
+
+  .jyronueImageContainer {
+    margin-top: 88px;
+    padding-right: 424px;
+    padding-bottom: 144px;
+  }
+
+  .jyronueImageItemTwo {
+    composes: jyronueImageItem;
+    position: absolute;
+    left: 208px;
+    top: -88px;
+  }
+
+  .jyronueImageItemThree {
+    composes: jyronueImageItem;
+    position: absolute;
+    left: 424px;
+    top: 144px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
