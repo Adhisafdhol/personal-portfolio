@@ -19,7 +19,7 @@ const Contact = () => {
           <a className={styles.githubLink} href="https://github.com/Aadheuss">
             Check my work on Github
           </a>
-          <apan className={styles.githubLogo}></apan>
+          <span className={styles.githubLogo}></span>
         </button>
       </div>
     </section>
