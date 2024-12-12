@@ -48,3 +48,20 @@
   width: min(560px, 100%);
   height: auto;
 }
+
+@media screen and (max-width: 1599px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .headerIntro {
+    align-self: flex-start;
+    max-width: 926px;
+  }
+
+  .logo {
+    width: 240px;
+    height: auto;
+  }
+}
