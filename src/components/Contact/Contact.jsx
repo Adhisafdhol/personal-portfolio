@@ -11,8 +11,8 @@ const Contact = () => {
           If you’re looking for a developer let’s chat
         </p>
         <address className={styles.address}>
-          <a className={styles.email} href="mailto:adhisafdhol@gmail.com">
-            adhisafdhol@gmail.com
+          <a className={styles.email} href="mailto:adhisafdhal@gmail.com">
+            adhisafdhal@gmail.com
           </a>
         </address>
         <button className={styles.githubButton} type="button">
