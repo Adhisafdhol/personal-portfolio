@@ -15,7 +15,7 @@ function App() {
       </main>
       <footer>
         <p className="copyrightText">
-          © Copyright Aadheuss 2024. All rights reserved
+          © Copyright Adhistira Afdhol 2024. All rights reserved
         </p>
       </footer>
     </>

@@ -7,13 +7,14 @@ function Header() {
       <div className={styles.headerIntro}>
         <div>
           <h1 className={styles.h1}>
-            Hello, I am <span className={styles.aadheuss}>Aadheuss</span>
+            Adhistira
+            <span className={styles.highlight}> Afdhol</span>
           </h1>
           <p className={styles.role}>Fullstack Developer & Designer</p>
         </div>
         <p className={styles.intro}>
           As a kid solving puzzles and art has been my go to activity to spend
-          my time on, So I was very intrigued to find out I can do both of that
+          my time on, so I was very intrigued to find out I can do both of that
           things in web development. I started learning programming since 2022
           and it was a whole different experience trying to taught myself how to
           program. The journey of learning and learning how to learn is such a

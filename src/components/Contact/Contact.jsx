@@ -11,12 +11,12 @@ const Contact = () => {
           If you’re looking for a developer let’s chat
         </p>
         <address className={styles.address}>
-          <a className={styles.email} href="mailto:aadheuss@gmail.com">
-            aadheuss@gmail.com
+          <a className={styles.email} href="mailto:adhisafdhol@gmail.com">
+            adhisafdhol@gmail.com
           </a>
         </address>
         <button className={styles.githubButton} type="button">
-          <a className={styles.githubLink} href="https://github.com/Aadheuss">
+          <a className={styles.githubLink} href="https://github.com/aadheuss">
             Check my work on Github
           </a>
           <span className={styles.githubLogo}></span>
