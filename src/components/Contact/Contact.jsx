@@ -1,6 +1,9 @@
 import styles from "./Contact.module.css";
+import { useRef } from "react";
 
 const Contact = () => {
+  const githubLinkRef = useRef(null);
+
   return (
     <section className={styles.contactContainer}>
       <div className={styles.contact}>
@@ -15,8 +18,17 @@ const Contact = () => {
             adhisafdhal@gmail.com
           </a>
         </address>
-        <button className={styles.githubButton} type="button">
+        <button
+          className={styles.githubButton}
+          type="button"
+          onClick={() => {
+            if (githubLinkRef.current) {
+              githubLinkRef.current.click();
+            }
+          }}
+        >
           <a
+            ref={githubLinkRef}
             className={styles.githubLink}
             href="https://github.com/Adhisafdhol"
           >
