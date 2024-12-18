@@ -16,7 +16,10 @@ const Contact = () => {
           </a>
         </address>
         <button className={styles.githubButton} type="button">
-          <a className={styles.githubLink} href="https://github.com/aadheuss">
+          <a
+            className={styles.githubLink}
+            href="https://github.com/Adhisafdhol"
+          >
             Check my work on Github
           </a>
           <span className={styles.githubLogo}></span>
