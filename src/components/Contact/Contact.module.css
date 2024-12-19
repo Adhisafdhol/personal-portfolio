@@ -55,7 +55,7 @@
   padding: 32px 64px;
   background-color: var(--brand-color-3);
   border-radius: 0 50px 50px 0;
-  transition: background-color 3s ease-out;
+  transition: background-color 300ms ease-out;
 }
 
 .githubButton:hover {
@@ -65,7 +65,7 @@
 
 .githubButton:active {
   background-color: var(--brand-color-2);
-  transition: background 3s ease-in;
+  transition: background-color 300ms ease-in;
 }
 
 .githubLink {

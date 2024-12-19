@@ -271,6 +271,11 @@
     padding: 64px 16px;
   }
 
+  .jyronueImageItem {
+    composes: imageItem;
+    border-radius: 0;
+  }
+
   .battleshipImageItemTwo {
     composes: imageItem;
     position: absolute;
@@ -347,6 +352,11 @@
     margin-top: 24px;
     padding-right: 140px;
     padding-bottom: 48px;
+  }
+
+  .jyronueImageItem {
+    composes: imageItem;
+    border-radius: 0;
   }
 
   .jyronueImageItemTwo {
