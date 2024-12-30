@@ -10,7 +10,7 @@ function Header() {
             Adhistira
             <span className={styles.highlight}> Afdhol</span>
           </h1>
-          <p className={styles.role}>Fullstack Developer & Designer</p>
+          <p className={styles.role}>Fullstack Developer</p>
         </div>
         <p className={styles.intro}>
           As a kid solving puzzles and art has been my go to activity to spend
