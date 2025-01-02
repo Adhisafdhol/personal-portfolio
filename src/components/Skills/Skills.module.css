@@ -246,6 +246,7 @@
   }
 
   .mainSkillItem {
+    border-radius: 8px;
     gap: 8px;
     padding: 16px 12px;
   }
