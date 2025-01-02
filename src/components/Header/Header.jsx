@@ -13,12 +13,13 @@ function Header() {
           <p className={styles.role}>Fullstack Developer</p>
         </div>
         <p className={styles.intro}>
-          As a kid solving puzzles and art has been my go to activity to spend
-          my time on, so I was very intrigued to find out I can do both of that
-          things in web development. I started learning programming since 2022
-          and it was a whole different experience trying to taught myself how to
-          program. The journey of learning and learning how to learn is such a
-          never ending experience for me and I am having a blast doing it.
+          I am Adhis. I&#039;m a full-stack developer who is passionate about
+          art and technology. I love challenges and am always on a mission to
+          constantly grow my skills and expertise in the software development
+          industry. I am a driven and ambitious individual who loves tackling
+          multitudes of complex programming problems. It is an essential goal
+          for me to continuously discover new ways to improve my abilities in
+          solving real-world issues through software development.
         </p>
       </div>
       <div>
