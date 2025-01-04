@@ -52,8 +52,7 @@
 
 @media screen and (max-width: 1599px) {
   .header {
-    display: flex;
-    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .headerIntro {
@@ -62,12 +61,18 @@
   }
 
   .logo {
-    width: 240px;
+    width: min(100%, 240px);
     height: auto;
   }
 }
 
 @media screen and (max-width: 1199px) {
+  .header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+
   .logo {
     width: 128px;
     height: auto;
