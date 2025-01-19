@@ -203,8 +203,12 @@
 }
 
 @media screen and (max-width: 799px) {
+  .container {
+    background-size: 1600% 100%;
+  }
   .header {
     padding: 48px;
+    background-image: url("../../assets/images/bg_portfolio_m.svg");
   }
 
   .logo {
