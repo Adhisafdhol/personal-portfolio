@@ -29,9 +29,8 @@
   );
   background-size: 800% 100%;
   animation-name: gradient;
-  animation-duration: 720s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
 }
 
 .header {
@@ -46,10 +45,6 @@
 
 @keyframes gradient {
   0% {
-    background-position: 0 50%;
-  }
-
-  40% {
     background-position: 100% 50%;
   }
 
@@ -126,9 +121,8 @@
   );
   background-size: 800% 100%;
   animation-name: gradient;
-  animation-duration: 720s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
