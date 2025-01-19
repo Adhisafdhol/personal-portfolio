@@ -10,10 +10,14 @@
     var(--color-6),
     var(--color-4),
     var(--color-12),
+    var(--color-12),
     var(--color-11),
     var(--color-10),
+    var(--color-10),
+    var(--color-9),
     var(--color-9),
     var(--color-8),
+    var(--color-7),
     var(--color-7),
     var(--brand-color-1),
     var(--brand-color-1),
@@ -21,9 +25,9 @@
     var(--brand-color-3),
     var(--brand-color-3)
   );
-  background-size: 600% 100%;
+  background-size: 800% 100%;
   animation-name: gradient;
-  animation-duration: 120s;
+  animation-duration: 150s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -103,10 +107,14 @@
     var(--color-6),
     var(--color-4),
     var(--color-12),
+    var(--color-12),
     var(--color-11),
     var(--color-10),
+    var(--color-10),
+    var(--color-9),
     var(--color-9),
     var(--color-8),
+    var(--color-7),
     var(--color-7),
     var(--brand-color-1),
     var(--brand-color-1),
@@ -114,9 +122,9 @@
     var(--brand-color-3),
     var(--brand-color-3)
   );
-  background-size: 600% 100%;
+  background-size: 800% 100%;
   animation-name: gradient;
-  animation-duration: 120s;
+  animation-duration: 150s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   background-clip: text;
