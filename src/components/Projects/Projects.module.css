@@ -1,3 +1,8 @@
+:root {
+  --img-height: 360px;
+  --img-width: 640px;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -38,7 +43,7 @@
 }
 
 .battleshipHeading {
-  font-size: var(--h3);
+  font-size: var(--h4);
   line-height: 1.25;
   margin: 0;
   font-family: "ibm-plex-sans", sans-serif;
@@ -55,21 +60,21 @@
 
 .battleshipImageContainer {
   position: relative;
-  padding-right: 192px;
-  padding-bottom: 96px;
+  padding-right: calc(var(--img-width) / 3.33);
+  padding-bottom: calc(var(--img-height) / 3.75);
 }
 
 .imageItem {
-  width: 640px;
-  height: 360px;
+  width: var(--img-width);
+  height: var(--img-height);
   border-radius: 16px;
 }
 
 .battleshipImageItemTwo {
   composes: imageItem;
   position: absolute;
-  top: 96px;
-  left: 192px;
+  top: calc(var(--img-height) / 3.33);
+  left: calc(var(--img-width) / 3.75);
   box-shadow: -16px -16px var(--color-white-1);
 }
 
@@ -96,7 +101,7 @@
 
 .jyronueHeading {
   text-align: start;
-  font-size: var(--h3);
+  font-size: var(--h4);
   line-height: 1.25;
   margin: 0;
   font-family: "ibm-plex-sans", sans-serif;
@@ -107,9 +112,9 @@
   align-self: center;
   border-radius: 0;
   position: relative;
-  margin-top: 96px;
-  padding-right: 480px;
-  padding-bottom: 168px;
+  margin-top: calc(var(--img-width) / 3.75);
+  padding-right: calc(var(--img-width) / 1.33);
+  padding-bottom: calc(var(--img-height) / 2.14);
 }
 
 .jyronueImageItem {
@@ -120,56 +125,21 @@
 .jyronueImageItemTwo {
   composes: jyronueImageItem;
   position: absolute;
-  left: 240px;
-  top: -96px;
+  left: calc(var(--img-width) / 2.66);
+  top: calc(var(--img-height) / -3.75);
 }
 
 .jyronueImageItemThree {
   composes: jyronueImageItem;
   position: absolute;
-  left: 480px;
-  top: 168px;
+  left: calc(var(--img-width) / 1.33);
+  top: calc(var(--img-height) / 2.14);
 }
 
 @media screen and (max-width: 1599px) {
-  .imageItem {
-    width: 560px;
-    height: 315px;
-  }
-
-  .battleshipImageContainer {
-    padding-right: 168px;
-    padding-bottom: 88px;
-  }
-
-  .battleshipImageItemTwo {
-    top: 88px;
-    left: 168px;
-  }
-
-  .jyronueImageContainer {
-    padding-right: 480px;
-    padding-bottom: 168px;
-  }
-
-  .jyronueImageContainer {
-    margin-top: 88px;
-    padding-right: 424px;
-    padding-bottom: 144px;
-  }
-
-  .jyronueImageItemTwo {
-    composes: jyronueImageItem;
-    position: absolute;
-    left: 208px;
-    top: -88px;
-  }
-
-  .jyronueImageItemThree {
-    composes: jyronueImageItem;
-    position: absolute;
-    left: 424px;
-    top: 144px;
+  :root {
+    --img-width: 426px;
+    --img-height: 240px;
   }
 }
 
@@ -178,14 +148,9 @@
     gap: 160px;
   }
 
-  .imageItem {
-    width: 360px;
-    height: 200px;
-  }
-
-  .projectsHeading {
-    padding: 0 32px;
-    margin-bottom: 64px;
+  :root {
+    --img-width: 360px;
+    --img-height: 200px;
   }
 
   .battleshipContainer {
@@ -194,34 +159,19 @@
     border-radius: 0;
   }
 
-  .battleshipHeading {
-    font-size: var(--h4);
-  }
-
   .battleshipImageContainer {
     position: relative;
-    padding-right: 96px;
-    padding-bottom: 56px;
   }
 
   .battleshipImageItemTwo {
     composes: imageItem;
     position: absolute;
-    top: 56px;
-    left: 96px;
     box-shadow: -16px -16px var(--color-white-1);
   }
 
   .jyronueImageContainer {
     border-radius: 0;
     position: relative;
-    margin-top: 56px;
-    padding-right: 272px;
-    padding-bottom: 96px;
-  }
-
-  .jyronueHeading {
-    font-size: var(--font-h4);
   }
 
   .jyronueImageItem {
@@ -232,15 +182,11 @@
   .jyronueImageItemTwo {
     composes: jyronueImageItem;
     position: absolute;
-    left: 136px;
-    top: -56px;
   }
 
   .jyronueImageItemThree {
     composes: jyronueImageItem;
     position: absolute;
-    left: 272px;
-    top: 96px;
   }
 }
 
@@ -254,8 +200,6 @@
   }
 
   .imageItem {
-    width: 240px;
-    height: 135px;
     border-radius: 8px;
   }
 
@@ -263,12 +207,9 @@
     padding: 0 16px;
   }
 
-  .battleship {
-    padding: 64px 32px;
-  }
-
+  .battleship,
   .jyronue {
-    padding: 64px 16px;
+    padding: 64px 32px;
   }
 
   .jyronueImageItem {
@@ -279,95 +220,46 @@
   .battleshipImageItemTwo {
     composes: imageItem;
     position: absolute;
-    top: 32px;
-    left: 96px;
     box-shadow: -8px -8px var(--color-white-1);
   }
 
   .jyronueImageContainer {
     border-radius: 0;
-    position: relative;
-    margin-top: 36px;
-    padding-right: 184px;
-    padding-bottom: 64px;
-  }
-
-  .jyronueImageItemTwo {
-    composes: jyronueImageItem;
-    position: absolute;
-    left: 88px;
-    top: -36px;
-  }
-
-  .jyronueImageItemThree {
-    composes: jyronueImageItem;
-    position: absolute;
-    left: 184px;
-    top: 64px;
   }
 }
 
 @media screen and (max-width: 449px) {
-  .imageItem {
-    width: 180px;
-    height: 101px;
-  }
-
-  .projectsHeading {
-    font-size: var(--h5);
-  }
-
-  .battleshipHeading {
-    font-size: var(--h5);
+  :root {
+    --img-width: 212px;
+    --img-height: 120px;
   }
 
   .projectList {
     gap: 64px;
   }
 
-  .battleship {
-    padding: 32px 16px;
+  .jyronueImageItem {
+    composes: imageItem;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  :root {
+    --img-width: 180px;
+    --img-height: 102px;
+  }
+
+  .projectList {
+    gap: 64px;
   }
 
   .projectDescription {
     font-size: var(--font-base);
   }
 
-  .jyronue {
-    padding: 32px 16px;
-  }
-
-  .jyronueHeading {
-    font-size: var(--h5);
-  }
-
-  .battleshipImageItemTwo {
-    top: 32px;
-    left: 96px;
-  }
-
-  .jyronueImageContainer {
-    border-radius: 0;
-    position: relative;
-    margin-top: 24px;
-    padding-right: 140px;
-    padding-bottom: 48px;
-  }
-
   .jyronueImageItem {
     composes: imageItem;
     border-radius: 0;
-  }
-
-  .jyronueImageItemTwo {
-    left: 64px;
-    top: -24px;
-  }
-
-  .jyronueImageItemThree {
-    composes: jyronueImageItem;
-    position: absolute;
-    left: 140px;
-    top: 48px;
   }
 }

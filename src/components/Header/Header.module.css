@@ -217,33 +217,11 @@
     max-width: 100%;
     box-sizing: border-box;
   }
-
-  .h1 {
-    font-size: var(--h4);
-  }
-
-  .role {
-    font-size: var(--h6);
-    line-height: 1.5;
-  }
-
-  .intro {
-    font-size: var(--base);
-  }
 }
 
 @media screen and (max-width: 449px) {
-  .header {
-    padding: 32px 16px;
-  }
-
   .logo {
     width: 64px;
     height: auto;
-  }
-
-  .headerIntro {
-    padding: 32px 0;
-    gap: 16px;
   }
 }

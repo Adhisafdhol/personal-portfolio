@@ -6,7 +6,12 @@
   font-size: var(--h2);
   font-weight: 700;
   line-height: 1.25;
-  background-color: var(--brand-color-3);
+  background-image: linear-gradient(
+    45deg,
+    var(--brand-color-1),
+    var(--brand-color-2),
+    var(--brand-color-3)
+  );
   color: var(--color-white-1);
   padding: 96px 64px;
 }
@@ -35,7 +40,7 @@
   flex: auto;
   background-color: var(--color-white-1);
   font-family: "open-sans", sans-serif;
-  font-size: var(--h4);
+  font-size: var(--h5);
   color: var(--color-black-2);
   line-height: 1.25;
   font-weight: 400;
@@ -55,11 +60,11 @@
 }
 
 .skillIcon {
-  width: 96px;
-  height: 96px;
+  width: var(--h2);
+  height: var(--h2);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 96px auto;
+  background-size: var(--h2) auto;
 }
 
 .html {
@@ -89,14 +94,13 @@
 .mainSkillText {
   margin: 0;
   font-family: "open-sans", sans-serif;
-  font-size: var(--h4);
+  font-size: var(--h6);
   line-height: 1.25;
 }
 
 .skillListContainer {
   display: flex;
   justify-content: center;
-  background: var(--brand-gradient-reverse);
   border-radius: 16px;
   gap: 96px;
   padding: 96px 0;
@@ -133,7 +137,7 @@
   margin: 0;
   font-family: "open-sans", sans-serif;
   font-weight: 400;
-  font-size: var(--h5);
+  font-size: var(--h6);
   line-height: 1.5;
 }
 
@@ -163,24 +167,6 @@
     padding: 24px 12px;
     gap: 16px;
   }
-
-  .skillIcon {
-    width: 64px;
-    height: 64px;
-    background-size: 64px auto;
-  }
-
-  .mainSkillText {
-    font-size: var(--h5);
-  }
-
-  .skillListHeading {
-    font-size: var(--h4);
-  }
-
-  .skillListText {
-    font-size: var(--h6);
-  }
 }
 
 @media screen and (max-width: 799px) {
@@ -201,28 +187,10 @@
     gap: 32px;
   }
 
-  .mainSkillHeading {
-    font-size: var(--h4);
-  }
-
   .mainSkill {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-  }
-
-  .mainSkillText {
-    font-size: var(--h6);
-  }
-
-  .skillIcon {
-    width: 48px;
-    height: 48px;
-    background-size: 48px auto;
-  }
-
-  .skillListHeading {
-    font-size: var(--h5);
   }
 }
 
@@ -241,31 +209,9 @@
     gap: 64px;
   }
 
-  .mainSkillHeading {
-    font-size: var(--h5);
-  }
-
   .mainSkillItem {
     border-radius: 8px;
     gap: 8px;
     padding: 16px 12px;
-  }
-
-  .mainSkillText {
-    font-size: var(--font-base);
-  }
-
-  .skillListHeading {
-    font-size: var(--h6);
-  }
-
-  .skillListText {
-    font-size: var(--font-base);
-  }
-
-  .skillIcon {
-    width: 32px;
-    height: 32px;
-    background-size: 32px auto;
   }
 }

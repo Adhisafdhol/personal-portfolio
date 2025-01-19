@@ -16,14 +16,14 @@
 .contactHeading {
   font-family: "ibm-plex-sans", sans-serif;
   font-weight: 700;
-  font-size: var(--font-h1);
+  font-size: var(--h2);
   line-height: 1.25;
   text-align: start;
   margin: 0;
 }
 
 .contactText {
-  font-size: var(--font-h5);
+  font-size: var(--h5);
   font-family: "open-sans", sans-serif;
   line-height: 1.5;
   text-align: start;
@@ -53,14 +53,35 @@
   gap: 32px;
   align-items: center;
   padding: 32px 64px;
-  background-color: var(--brand-color-3);
+  background-color: var(--brand-color-1);
   border-radius: 0 50px 50px 0;
-  transition: background-color 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+@keyframes gradient {
+  0% {
+    background-size: 150%;
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-size: 100%;
+    background-position: 0 50%;
+  }
 }
 
 .githubButton:hover {
-  background: var(--brand-gradient-reverse);
-  transition: background 3s ease-in;
+  background-image: linear-gradient(
+    to left,
+    var(--brand-color-1),
+    var(--brand-color-2),
+    var(--brand-color-3)
+  );
+  animation-name: gradient;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform: translateY(-5%);
+  transition: all 300ms ease-in;
 }
 
 .githubButton:active {
@@ -70,7 +91,7 @@
 
 .githubLink {
   color: var(--color-white-1);
-  font-size: var(--font-h4);
+  font-size: var(--h4);
   font-family: "open-sans", sans-serif;
   line-height: 1.25;
   font-weight: 400;
@@ -79,13 +100,13 @@
 
 .githubLogo {
   display: flex;
-  width: calc(var(--font-h4) * 1.25);
-  height: calc(var(--font-h4) * 1.25);
+  width: calc(var(--h4) * 1.25);
+  height: calc(var(--h4) * 1.25);
 }
 
 .githubLogo::before {
-  width: calc(var(--font-h4) * 1.25);
-  height: calc(var(--font-h4) * 1.25);
+  width: calc(var(--h4) * 1.25);
+  height: calc(var(--h4) * 1.25);
   content: " ";
   background: url("../../assets/images/github-icon.svg");
   background-position: center;
