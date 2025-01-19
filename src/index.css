@@ -23,6 +23,31 @@
 }
 
 @font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/inter/inter-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/inter/inter-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/inter/inter-medium-webfont.woff2") format("woff2"),
+    url("./assets/fonts/inter/inter-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/inter/inter-semibolditalic-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/inter/inter-semibolditalic-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "open-sans";
   src: url("./assets/fonts/open-sans/OpenSans-Semibold.woff2") format("woff2"),
     url("./assets/fonts/open-sans/OpenSans-Semibold.woff") format("woff");
@@ -65,6 +90,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "lobster";
+  src: url("./assets/fonts/lobster/lobster-regular-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/lobster/lobster-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   font-family: "open-sans", "inter", "ibm-plex-sans", system-ui, sans-serif;
   line-height: 1.5;
@@ -75,9 +109,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --brand-color-1: #4cb0ce;
-  --brand-color-2: #4ccf97;
-  --brand-color-3: #4c87cf;
+  --brand-color-1: #aaaff3;
+  --brand-color-2: #363e8a;
+  --brand-color-3: #112c65;
+  --color-4: #aadbf2;
+  --color-5: #f2e3aa;
+  --color-6: #f3aae2;
   --color-white-1: #f4f5f5;
   --color-white-2: #eaeced;
   --color-black-1: #0f2329;
@@ -86,36 +123,42 @@
   --color-black-4: #cacecf;
   --brand-gradient: linear-gradient(
     to right,
-    var(--brand-color-2),
     var(--brand-color-1),
+    var(--brand-color-2),
     var(--brand-color-3)
   );
   --brand-gradient-reverse: linear-gradient(
     to left,
-    var(--brand-color-2),
     var(--brand-color-1),
+    var(--brand-color-2),
     var(--brand-color-3)
   );
-  --font-h1: 90px;
-  --font-h2: 67px;
-  --font-h3: 51px;
-  --font-h4: 38px;
-  --font-h5: 28px;
-  --font-h6: 21px;
-  --font-base: 16px;
-  --font-small: 12px;
+  --font-scale: 1.333;
+  --font-base: 1rem;
+  --font-small: calc(var(--font-base) / var(--font-scale));
+  --h6: calc(var(--font-base) * var(--font-scale));
+  --h5: calc(var(--h6) * var(--font-scale));
+  --h4: calc(var(--h5) * var(--font-scale));
+  --h3: calc(var(--h4) * var(--font-scale));
+  --h2: calc(var(--h3) * var(--font-scale));
+  --h1: calc(var(--h2) * var(--font-scale));
+  --padding-l: var(--h1);
+  --ff-lobster: "lobster", system-ui, serif;
+  --ff-inter: "inter", system-ui, sans-serif;
+  --ff-ibm-plex-sans: "ibm-plex-sans", system-ui, sans-serif;
   color-scheme: light dark;
   color: var(--color-black-1);
   background-color: var(--color-white-1);
 }
 
 a {
-  font-family: "ibm-plex-sans", "open-sans", "inter", sans-serif;
+  font-family: var(--ff-inter);
   font-weight: 500;
   text-decoration: inherit;
 }
 
 body {
+  font-family: var(--ff-inter);
   margin: 0;
   display: flex;
   justify-content: center;
@@ -124,7 +167,7 @@ body {
 }
 
 h1 {
-  font-size: var(--font-h1);
+  font-size: var(--h1);
   line-height: 1.25;
 }
 
@@ -146,4 +189,44 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.slide-down {
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes slide-down {
+  0% {
+    translate: -5% -10%;
+    opacity: 0.5;
+    scale: 1.1;
+  }
+
+  80% {
+    translate: 1% 1%;
+    opacity: 1;
+    scale: 1;
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes backround-move-down {
+  0% {
+    background-position: 0 50%;
+  }
+
+  40% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }

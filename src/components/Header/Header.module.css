@@ -1,8 +1,42 @@
+.container {
+  background-image: linear-gradient(
+    -45deg,
+    var(--color-5),
+    var(--color-6),
+    var(--color-4),
+    var(--brand-color-1),
+    var(--brand-color-2),
+    var(--brand-color-3)
+  );
+  background-size: 200% 100%;
+  animation-name: gradient;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 .header {
   display: grid;
   grid-template-columns: 926px 1fr;
   align-items: end;
-  padding: 64px;
+  padding: var(--padding-l);
+  background-image: url("../../assets/images/bg_portfolio.svg");
+  background-size: cover, 100%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  40% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .headerIntro {
@@ -13,41 +47,82 @@
 }
 
 .h1 {
-  font-family: "ibm-plex-sans", sans-serif;
-  line-height: 1.25;
+  font-family: var(--ff-lobster);
+  font-size: var(--h1);
+  line-height: 1.2;
   text-align: left;
   margin: 0;
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes slide-down {
+  0% {
+    translate: -5% -10%;
+    opacity: 0.5;
+    scale: 1.1;
+  }
+
+  80% {
+    translate: 1% 1%;
+    opacity: 1;
+    scale: 1;
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 .highlight {
-  font-family: "open-sans", sans-serif;
   font-weight: 400;
-  background: var(--brand-gradient);
+  background-image: linear-gradient(
+    -45deg,
+    var(--color-5),
+    var(--color-6),
+    var(--color-4),
+    var(--brand-color-1),
+    var(--brand-color-2),
+    var(--brand-color-3)
+  );
+  background-size: 200% 100%;
+  animation-name: gradient;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .role {
-  font-family: "open-sans", sans-serif;
-  font-size: var(--font-h3);
+  font-family: var(--ff-inter);
+  font-size: var(--h4);
   line-height: 1.25;
   text-align: start;
-  color: var(--color-black-3);
+  color: var(--color-black-2);
   margin: 0;
+  font-style: italic;
+  font-weight: 600;
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
 
 .intro {
+  max-width: 72ch;
+  font-weight: 500;
   color: var(--color-black-2);
-  font-family: "open-sans", sans-serif;
-  font-size: var(--font-h5);
+  font-family: var(--ff-inter);
+  font-size: var(--h6);
   line-height: 1.5;
   text-align: start;
   margin: 0;
-}
-
-.logo {
-  width: min(560px, 100%);
-  height: auto;
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
 
 @media screen and (max-width: 1599px) {
@@ -85,15 +160,15 @@
   }
 
   .h1 {
-    font-size: var(--font-h2);
+    font-size: var(--h2);
   }
 
   .role {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .intro {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
   }
 }
 
@@ -114,16 +189,16 @@
   }
 
   .h1 {
-    font-size: var(--font-h4);
+    font-size: var(--h4);
   }
 
   .role {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
     line-height: 1.5;
   }
 
   .intro {
-    font-size: var(--font-base);
+    font-size: var(--base);
   }
 }
 
