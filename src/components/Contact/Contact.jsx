@@ -20,6 +20,8 @@ const Contact = ({ toggleContainerClass }) => {
           </a>
         </address>
         <button
+          onTouchStart={() => toggleContainerClass("gc-purple")}
+          onTouchEnd={() => toggleContainerClass("gc-purple")}
           onMouseEnter={() => toggleContainerClass("gc-purple")}
           onMouseLeave={() => toggleContainerClass("gc-purple")}
           className={styles.githubButton}

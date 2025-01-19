@@ -246,7 +246,7 @@
   }
 
   .skillListContainer {
-    padding: 32px 16px;
+    padding: 32px 8px;
   }
 
   .skillListOne {
@@ -260,12 +260,6 @@
   }
 
   .skillItem {
-    width: var(--h4);
-    height: var(--h4);
-  }
-
-  .icon {
-    width: var(--h4);
-    height: var(--h4);
+    padding: 0.4em;
   }
 }
