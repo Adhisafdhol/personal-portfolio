@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 64px;
   font-family: "ibm-plex-sans", sans-serif;
-  font-size: var(--font-h2);
+  font-size: var(--h2);
   font-weight: 700;
   line-height: 1.25;
   background-color: var(--brand-color-3);
@@ -23,7 +23,7 @@
   margin: 0;
   font-family: "ibm-plex-sans", sans-serif;
   line-height: 1.25;
-  font-size: var(--font-h3);
+  font-size: var(--h3);
   color: var(--color-white-1);
 }
 
@@ -35,7 +35,7 @@
   flex: auto;
   background-color: var(--color-white-1);
   font-family: "open-sans", sans-serif;
-  font-size: var(--font-h4);
+  font-size: var(--h4);
   color: var(--color-black-2);
   line-height: 1.25;
   font-weight: 400;
@@ -89,7 +89,7 @@
 .mainSkillText {
   margin: 0;
   font-family: "open-sans", sans-serif;
-  font-size: var(--font-h4);
+  font-size: var(--h4);
   line-height: 1.25;
 }
 
@@ -126,14 +126,14 @@
   margin: 0;
   margin-bottom: 24px;
   line-height: 1.25;
-  font-size: var(--font-h3);
+  font-size: var(--h3);
 }
 
 .skillListText {
   margin: 0;
   font-family: "open-sans", sans-serif;
   font-weight: 400;
-  font-size: var(--font-h5);
+  font-size: var(--h5);
   line-height: 1.5;
 }
 
@@ -171,15 +171,15 @@
   }
 
   .mainSkillText {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .skillListHeading {
-    font-size: var(--font-h4);
+    font-size: var(--h4);
   }
 
   .skillListText {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
   }
 }
 
@@ -202,7 +202,7 @@
   }
 
   .mainSkillHeading {
-    font-size: var(--font-h4);
+    font-size: var(--h4);
   }
 
   .mainSkill {
@@ -212,7 +212,7 @@
   }
 
   .mainSkillText {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
   }
 
   .skillIcon {
@@ -222,7 +222,7 @@
   }
 
   .skillListHeading {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 }
 
@@ -242,7 +242,7 @@
   }
 
   .mainSkillHeading {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .mainSkillItem {
@@ -256,7 +256,7 @@
   }
 
   .skillListHeading {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
   }
 
   .skillListText {

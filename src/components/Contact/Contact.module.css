@@ -98,11 +98,11 @@
     margin: 0 32px;
   }
   .contactHeading {
-    font-size: var(--font-h3);
+    font-size: var(--h3);
   }
 
   .contactText {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
   }
 
   .address {
@@ -115,19 +115,19 @@
   }
 
   .githubLink {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
     line-height: 1.5;
   }
 
   .githubLogo {
     display: flex;
-    width: calc(var(--font-h6) * 1.5);
-    height: calc(var(--font-h6) * 1.5);
+    width: calc(var(--h6) * 1.5);
+    height: calc(var(--h6) * 1.5);
   }
 
   .githubLogo::before {
-    width: calc(var(--font-h6) * 1.5);
-    height: calc(var(--font-h6) * 1.5);
+    width: calc(var(--h6) * 1.5);
+    height: calc(var(--h6) * 1.5);
   }
 }
 
@@ -142,11 +142,11 @@
   }
 
   .contactHeading {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .contactText {
-    font-size: var(--font-h6);
+    font-size: var(--h6);
   }
 
   .githubButton {
@@ -181,7 +181,7 @@
   }
 
   .contactHeading {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .contactText {

@@ -8,7 +8,7 @@
   margin: 96px 0;
   font-family: "ibm-plex-sans", sans-serif;
   line-height: 1.25;
-  font-size: var(--font-h3);
+  font-size: var(--h3);
   color: var(--color-black-1);
   text-align: start;
 }
@@ -38,7 +38,7 @@
 }
 
 .battleshipHeading {
-  font-size: var(--font-h3);
+  font-size: var(--h3);
   line-height: 1.25;
   margin: 0;
   font-family: "ibm-plex-sans", sans-serif;
@@ -46,7 +46,7 @@
 
 .projectDescription {
   text-align: start;
-  font-size: var(--font-h6);
+  font-size: var(--h6);
   font-family: "open-sans", sans-serif;
   line-height: 1.5;
   margin: 0;
@@ -96,7 +96,7 @@
 
 .jyronueHeading {
   text-align: start;
-  font-size: var(--font-h3);
+  font-size: var(--h3);
   line-height: 1.25;
   margin: 0;
   font-family: "ibm-plex-sans", sans-serif;
@@ -195,7 +195,7 @@
   }
 
   .battleshipHeading {
-    font-size: var(--font-h4);
+    font-size: var(--h4);
   }
 
   .battleshipImageContainer {
@@ -314,11 +314,11 @@
   }
 
   .projectsHeading {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .battleshipHeading {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .projectList {
@@ -338,7 +338,7 @@
   }
 
   .jyronueHeading {
-    font-size: var(--font-h5);
+    font-size: var(--h5);
   }
 
   .battleshipImageItemTwo {
