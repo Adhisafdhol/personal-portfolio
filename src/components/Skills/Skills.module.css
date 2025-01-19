@@ -237,6 +237,16 @@
     gap: 24px;
     padding: 48px 32px;
   }
+
+  .skillItem {
+    width: var(--h1);
+    height: var(--h1);
+  }
+
+  .icon {
+    width: var(--h1);
+    height: var(--h1);
+  }
 }
 
 @media screen and (max-width: 499px) {
