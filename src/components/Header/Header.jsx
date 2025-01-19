@@ -11,12 +11,13 @@ function Header() {
       (entries) => {
         entries.forEach((entry) => {
           console.log(entry.intersectionRatio);
-          if (entry.isIntersecting) {
-            console.log({ entry });
+          if (entry.isIntersecting && entry.intersectionRatio > 0.11) {
             if (!entry.target.classList.contains("slide-down")) {
               entry.target.classList.add("slide-down");
             }
-          } else {
+          }
+
+          if (!entry.isIntersecting && entry.intersectionRatio < 1) {
             if (entry.target.classList.contains("slide-down")) {
               entry.target.classList.remove("slide-down");
             }

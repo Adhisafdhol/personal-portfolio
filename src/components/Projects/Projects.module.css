@@ -11,7 +11,7 @@
 .projectsHeading {
   padding: 0 64px;
   margin: 96px 0;
-  font-family: "ibm-plex-sans", sans-serif;
+  font-family: var(--f-ibm-plex-sans);
   line-height: 1.25;
   font-size: var(--h3);
   color: var(--color-black-1);
@@ -46,13 +46,13 @@
   font-size: var(--h4);
   line-height: 1.25;
   margin: 0;
-  font-family: "ibm-plex-sans", sans-serif;
+  font-family: var(--ff-ibm-plex-sans);
 }
 
 .projectDescription {
   text-align: start;
   font-size: var(--h6);
-  font-family: "open-sans", sans-serif;
+  font-family: var(--ff-open-sans);
   line-height: 1.5;
   margin: 0;
   color: var(--color-black-3);

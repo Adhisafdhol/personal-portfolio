@@ -1,7 +1,8 @@
 import styles from "./Contact.module.css";
 import { useRef } from "react";
+import PropTypes from "prop-types";
 
-const Contact = () => {
+const Contact = ({ toggleContainerClass }) => {
   const githubLinkRef = useRef(null);
 
   return (
@@ -19,6 +20,8 @@ const Contact = () => {
           </a>
         </address>
         <button
+          onMouseEnter={() => toggleContainerClass("gc-purple")}
+          onMouseLeave={() => toggleContainerClass("gc-purple")}
           className={styles.githubButton}
           type="button"
           onClick={() => {
@@ -39,6 +42,10 @@ const Contact = () => {
       </div>
     </section>
   );
+};
+
+Contact.propTypes = {
+  toggleContainerClass: PropTypes.func,
 };
 
 export default Contact;

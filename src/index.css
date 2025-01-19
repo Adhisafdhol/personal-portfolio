@@ -156,6 +156,7 @@
   --ff-lobster: "lobster", system-ui, serif;
   --ff-inter: "inter", system-ui, sans-serif;
   --ff-ibm-plex-sans: "ibm-plex-sans", system-ui, sans-serif;
+  --ff-open-sans: "open-sans", system-ui, sans-serif;
   color-scheme: light dark;
   color: var(--color-black-1);
   background-color: var(--color-white-1);
@@ -207,6 +208,22 @@ button:focus-visible {
   animation-timing-function: linear;
 }
 
+.gc-purple {
+  background-image: url("./assets/images/bg_portfolio.svg"),
+    linear-gradient(
+      to right,
+      var(--brand-color-1),
+      var(--brand-color-2),
+      var(--brand-color-3)
+    );
+  background-size: cover, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  animation-name: gradient-slide-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-;
+  transition: all 1s ease-in;
+}
+
 @keyframes slide-down {
   0% {
     translate: -5% -10%;
@@ -234,6 +251,16 @@ button:focus-visible {
 
   100% {
     background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-slide-right {
+  0% {
+    background-size: cover, 0% 100%;
+  }
+
+  100% {
+    background-size: cover, 100% 100%;
   }
 }
 

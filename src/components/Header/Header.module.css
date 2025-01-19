@@ -25,7 +25,12 @@
     var(--brand-color-1),
     var(--brand-color-2),
     var(--brand-color-3),
-    var(--brand-color-3)
+    var(--brand-color-3),
+    var(--color-15),
+    var(--color-15),
+    var(--color-14),
+    var(--color-13),
+    var(--color-13)
   );
   background-size: 800% 100%;
   animation-name: gradient;
@@ -92,7 +97,6 @@
 }
 
 .highlight {
-  font-weight: 400;
   background-image: linear-gradient(
     -45deg,
     var(--color-15),
@@ -106,10 +110,12 @@
     var(--color-12),
     var(--color-12),
     var(--color-11),
+    var(--color-11),
     var(--color-10),
     var(--color-10),
     var(--color-9),
     var(--color-9),
+    var(--color-8),
     var(--color-8),
     var(--color-7),
     var(--color-7),
@@ -117,11 +123,19 @@
     var(--brand-color-1),
     var(--brand-color-2),
     var(--brand-color-3),
-    var(--brand-color-3)
+    var(--brand-color-3),
+    var(--color-15),
+    var(--color-15),
+    var(--color-14),
+    var(--color-13),
+    var(--color-13)
   );
+  padding: 0.1em 0;
+
   background-size: 800% 100%;
   animation-name: gradient;
   animation-duration: 10s;
+  line-height: normal;
   animation-timing-function: ease-in-out;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -190,7 +204,7 @@
   }
 
   .h1 {
-    font-size: var(--h2);
+    font-size: var(--h1);
   }
 
   .role {
@@ -206,6 +220,7 @@
   .container {
     background-size: 1600% 100%;
   }
+
   .header {
     padding: 48px;
     background-image: url("../../assets/images/bg_portfolio_m.svg");
@@ -224,6 +239,11 @@
 }
 
 @media screen and (max-width: 449px) {
+  .header {
+    padding: 24px;
+    background-image: url("../../assets/images/bg_portfolio_m.svg");
+  }
+
   .logo {
     width: 64px;
     height: auto;

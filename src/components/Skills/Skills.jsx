@@ -1,4 +1,5 @@
 import styles from "./Skills.module.css";
+import skills from "../../contents/skills";
 
 const Skills = () => {
   return (
@@ -31,40 +32,19 @@ const Skills = () => {
           <p className={styles.mainSkillText}>Typescript</p>
         </div>
       </div>
-      <div className={styles.skillListContainer}>
-        <div className={styles.skillListOne}>
-          <ul className={styles.skillList}>
-            <h3 className={styles.skillListHeading}>Backend</h3>
-            <li className={styles.skillListText}>Javascript</li>
-            <li className={styles.skillListText}>Node.js</li>
-            <li className={styles.skillListText}>Express</li>
-            <li className={styles.skillListText}>SQl</li>
-            <li className={styles.skillListText}>Postgresql</li>
-            <li className={styles.skillListText}>MongoDB</li>
-          </ul>
-          <ul className={styles.skillList}>
-            <h3 className={styles.skillListHeading}>Frontend</h3>
-            <li className={styles.skillListText}>HTML</li>
-            <li className={styles.skillListText}>CSS</li>
-            <li className={styles.skillListText}>Javascript</li>
-            <li className={styles.skillListText}>typescript</li>
-            <li className={styles.skillListText}>react</li>
-          </ul>
-        </div>
-        <div className={styles.skillListTwo}>
-          <ul className={styles.skillList}>
-            <h3 className={styles.skillListHeading}>Design & Development</h3>
-            <li className={styles.skillListText}>Figma</li>
-            <li className={styles.skillListText}>Inkscape</li>
-            <li className={styles.skillListText}>Git & Github</li>
-          </ul>
-          <ul className={styles.skillList}>
-            <h3 className={styles.skillListHeading}>Testing</h3>
-            <li className={styles.skillListText}>Jest</li>
-            <li className={styles.skillListText}>Supertest</li>
-          </ul>
-        </div>
-      </div>
+      <ul className={styles.skillListContainer}>
+        {skills.map((skill) => {
+          return (
+            <li className={styles.skillItem} key={skill.name}>
+              <img
+                className={styles.icon}
+                src={skill.icon}
+                alt={`${skill.name} Icon`}
+              />
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };
