@@ -209,6 +209,7 @@ button:focus-visible {
 }
 
 .gc-purple {
+  background-color: var(--color-14);
   background-image: url("./assets/images/bg_portfolio.svg"),
     linear-gradient(
       to right,

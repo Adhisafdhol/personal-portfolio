@@ -8,6 +8,7 @@ import inkscape from "../assets/images/inkscape-icon.svg";
 import git from "../assets/images/git-icon.svg";
 import jest from "../assets/images/jest-icon.svg";
 import bash from "../assets/images/bash-icon.svg";
+import webpack from "../assets/images/webpack-icon.svg";
 
 const skills = [
   {
@@ -25,6 +26,10 @@ const skills = [
   {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Webpack",
+    icon: webpack,
   },
   {
     name: "React",
@@ -47,7 +52,7 @@ const skills = [
     icon: jest,
   },
   {
-    name: "bash",
+    name: "Bash",
     icon: bash,
   },
 ];

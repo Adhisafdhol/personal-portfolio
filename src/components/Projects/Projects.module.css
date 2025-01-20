@@ -6,6 +6,7 @@
 .projects {
   display: flex;
   flex-direction: column;
+  padding-bottom: 192px;
 }
 
 .projectsHeading {
@@ -25,6 +26,7 @@
 }
 
 .battleshipContainer {
+  box-sizing: border-box;
   display: flex;
   background: linear-gradient(to right, #e71a1a, #000000);
   margin: 0 64px;
@@ -33,7 +35,8 @@
 }
 
 .battleship {
-  flex: 0;
+  width: min(calc(450px + 30vw), 90vw);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -52,10 +55,10 @@
 .projectDescription {
   text-align: start;
   font-size: var(--h6);
-  font-family: var(--ff-open-sans);
+  font-family: var(--ff-inter);
   line-height: 1.5;
   margin: 0;
-  color: var(--color-black-3);
+  color: var(--color-15);
 }
 
 .battleshipImageContainer {
@@ -106,6 +109,7 @@
   margin: 0;
   font-family: "ibm-plex-sans", sans-serif;
   font-weight: 400;
+  color: #191919;
 }
 
 .jyronueImageContainer {
@@ -134,6 +138,93 @@
   position: absolute;
   left: calc(var(--img-width) / 1.33);
   top: calc(var(--img-height) / 2.14);
+}
+
+.octoconvoContainer {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #f3f1f7 70%, #ddd6e8);
+}
+
+.octoconvo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 96px 64px;
+}
+
+.octoconvoHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  font-size: var(--h4);
+  line-height: 1.25;
+  margin: 0;
+  color: #440099;
+  font-family: var(--ff-inter);
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+
+.li::before {
+  content: "● ";
+  color: #6229a9;
+}
+
+.battleshipLi {
+  composes: li;
+}
+
+.jyronueLi {
+  composes: li;
+}
+
+.jyronueLi::before {
+  color: #bedae3;
+}
+
+.battleshipLi::before {
+  color: #e71a1a;
+}
+
+.octoconvoList::marker {
+  color: #6229a9;
+}
+
+.octoconvoH3 {
+  font-size: var(--h5);
+  text-align: start;
+  color: #6229a9;
+}
+
+.battleshipH3 {
+  composes: octoconvoH3;
+  color: #e71a1a;
+}
+
+.jyronueH3 {
+  composes: octoconvoH3;
+  color: #126c85;
+}
+
+.li {
+  font-size: var(--h6);
+  text-align: start;
+}
+
+.octoconvoImageItem {
+  width: min(calc(640px + 10vw), 70vw);
+  box-sizing: border-box;
+  height: auto;
+  border-radius: 0;
 }
 
 @media screen and (max-width: 1599px) {
@@ -191,6 +282,11 @@
 }
 
 @media screen and (max-width: 799px) {
+  :root {
+    --img-width: 231px;
+    --img-height: 130px;
+  }
+
   .projectList {
     gap: 96px;
   }
@@ -207,9 +303,15 @@
     padding: 0 16px;
   }
 
-  .battleship,
-  .jyronue {
+  .jyronue,
+  .octoconvo,
+  .battleship {
     padding: 64px 32px;
+  }
+
+  .battleshipContainer {
+    padding: 0;
+    margin: 0;
   }
 
   .jyronueImageItem {
@@ -226,9 +328,15 @@
   .jyronueImageContainer {
     border-radius: 0;
   }
+
+  .octoconvoImageItem {
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 0;
+  }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 499px) {
   :root {
     --img-width: 212px;
     --img-height: 120px;
@@ -252,10 +360,6 @@
 
   .projectList {
     gap: 64px;
-  }
-
-  .projectDescription {
-    font-size: var(--font-base);
   }
 
   .jyronueImageItem {
