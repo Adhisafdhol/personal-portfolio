@@ -6,7 +6,6 @@
 .projects {
   display: flex;
   flex-direction: column;
-  padding-bottom: 192px;
 }
 
 .projectsHeading {
@@ -95,6 +94,7 @@
 }
 
 .jyronue {
+  max-width: 72ch;
   background: conic-gradient(from 270deg, #f4f5f5, #bedae3);
   display: flex;
   flex-direction: column;
@@ -188,7 +188,7 @@
 }
 
 .jyronueLi::before {
-  color: #bedae3;
+  color: #126c85;
 }
 
 .battleshipLi::before {
@@ -349,6 +349,10 @@
   .jyronueImageItem {
     composes: imageItem;
     border-radius: 0;
+  }
+
+  .battleship {
+    width: 95vw;
   }
 }
 

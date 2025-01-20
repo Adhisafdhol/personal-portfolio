@@ -22,10 +22,12 @@ function App() {
         <Projects />
       </main>
       <footer className="footer" ref={footerRef}>
-        <Contact toggleContainerClass={toggleContainerClass} />
-        <p className="copyrightText">
-          © Copyright Adhistira Afdhol 2024. All rights reserved
-        </p>
+        <div className="f-bg">
+          <Contact toggleContainerClass={toggleContainerClass} />
+          <p className="copyrightText">
+            © Copyright Adhistira Afdhol 2024. All rights reserved
+          </p>
+        </div>
       </footer>
     </>
   );

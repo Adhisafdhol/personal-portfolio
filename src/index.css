@@ -210,15 +210,14 @@ button:focus-visible {
 
 .gc-purple {
   background-color: var(--color-14);
-  background-image: url("./assets/images/bg_portfolio.svg"),
-    linear-gradient(
-      to right,
-      var(--brand-color-1),
-      var(--brand-color-2),
-      var(--brand-color-3)
-    );
-  background-size: cover, 100% 100%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: linear-gradient(
+    to right,
+    var(--brand-color-1),
+    var(--brand-color-2),
+    var(--brand-color-3)
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   animation-name: gradient-slide-right;
   animation-duration: 1s;
   animation-timing-function: ease-in-;
@@ -257,11 +256,11 @@ button:focus-visible {
 
 @keyframes gradient-slide-right {
   0% {
-    background-size: cover, 0% 100%;
+    background-size: 0% 100%;
   }
 
   100% {
-    background-size: cover, 100% 100%;
+    background-size: 100% 100%;
   }
 }
 
