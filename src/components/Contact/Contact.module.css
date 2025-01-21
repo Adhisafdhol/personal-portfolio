@@ -129,7 +129,7 @@
   }
 
   .contactHeading {
-    font-size: var(--h3);
+    font-size: var(--h4);
   }
 
   .contactText {
@@ -173,7 +173,7 @@
   }
 
   .contactHeading {
-    font-size: var(--h5);
+    font-size: var(--h4);
   }
 
   .contactText {
@@ -200,7 +200,7 @@
   }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 499px) {
   .contactContainer {
     gap: 8px;
     margin: 0 8px;
@@ -212,7 +212,7 @@
   }
 
   .contactHeading {
-    font-size: var(--h5);
+    font-size: var(--h4);
   }
 
   .contactText {

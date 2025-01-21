@@ -204,7 +204,7 @@
   }
 
   .h1 {
-    font-size: var(--h1);
+    font-size: var(--h2);
   }
 
   .role {
@@ -238,7 +238,11 @@
   }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 499px) {
+  .h1 {
+    font-size: var(--h1);
+  }
+
   .header {
     padding: 24px;
     background-image: url("../../assets/images/bg_portfolio_m.svg");

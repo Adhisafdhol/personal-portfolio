@@ -23,7 +23,7 @@
   margin: 0;
   font-family: var(--ff-inter);
   line-height: 1.25;
-  font-size: var(--h2);
+  font-size: var(--h3);
   color: var(--color-white-1);
 }
 
@@ -179,6 +179,10 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .mainSkillHeading {
+    font-size: var(--h3);
+  }
+
   .skills {
     gap: 64px;
     padding: 48px 32px;
@@ -206,6 +210,10 @@
   .icon {
     width: var(--h3);
     height: var(--h3);
+  }
+
+  .mainSkillText {
+    font-size: var(--h6);
   }
 }
 
