@@ -69,15 +69,20 @@ function Header() {
               Fullstack Developer
             </p>
           </div>
-          <p ref={introRef} className={styles.intro}>
-            I&#039;m a full-stack developer who is passionate about art and
-            technology. I love challenges and am always on a mission to
-            constantly grow my skills and expertise in the software development
-            industry. I am a driven and ambitious individual who loves tackling
-            multitudes of complex programming problems. It is an essential goal
-            for me to continuously discover new ways to improve my abilities in
-            solving real-world issues through software development.
-          </p>
+          <div ref={introRef} className={styles.introContainer}>
+            <p className={styles.intro}>
+              &emsp; A Developer who combines creativity with pragmatism, design
+              beautiful efficient software that works well and pleasing to the
+              eyes.
+            </p>
+            <p className={styles.intro}>
+              I am a fullstack developer who focuses on creating clean
+              maintainable code with robust testing and seamless user
+              experience. My philosophy is to built software that solve users’
+              needs, provide great user experience, and built software that is
+              accessible, well-designed, and efficient.
+            </p>
+          </div>
         </div>
       </header>
     </div>

@@ -91,11 +91,38 @@
 }
 
 @font-face {
+  font-family: "ibm-plex-sans";
+  src: url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Light.woff2")
+      format("woff2"),
+    url("./assets/fonts/ibm-plex-sans/IBMPlexSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "lobster";
   src: url("./assets/fonts/lobster/lobster-regular-webfont.woff2")
       format("woff2"),
     url("./assets/fonts/lobster/lobster-regular-webfont.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playfair-display";
+  src: url("./assets/fonts/playfair-display/playfair-display-regular-var.woff2")
+      format("woff2"),
+    url("./assets/fonts/playfair-display/playfair-display-regular-var.woff")
+      format("woff");
   font-style: normal;
 }
 
@@ -109,9 +136,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --brand-color-1: #aaaff3;
-  --brand-color-2: #363e8a;
-  --brand-color-3: #112c65;
+  --brand-white: #dddee3;
+  --brand-1: #1c1d1f;
+  --brand-2: #2b3c42;
+  --brand-3: #6f7f95;
+  --soft-brand-black: #23282f;
+  --soft-brand-grey: #a6a9aa;
+
   --color-4: #7b5e52;
   --color-5: #b49478;
   --color-6: #412e2d;
@@ -127,21 +158,21 @@
 
   --color-white-1: #f4f5f5;
   --color-white-2: #eaeced;
-  --color-black-1: #0f2329;
-  --color-black-2: #606d71;
+  --black-100: #0f2329;
+  --black-200: #28393f;
   --color-black-3: #949da0;
   --color-black-4: #cacecf;
-  --brand-gradient: linear-gradient(
-    to right,
-    var(--brand-color-1),
-    var(--brand-color-2),
-    var(--brand-color-3)
-  );
+  --brand-gradient-up: linear-gradient(to top, var(--brand-1), var(--brand-2));
   --brand-gradient-reverse: linear-gradient(
     to left,
     var(--brand-color-1),
     var(--brand-color-2),
     var(--brand-color-3)
+  );
+  --soft-brand-gradient-down: linear-gradient(
+    to bottom,
+    var(--soft-brand-grey),
+    var(--soft-brand-black)
   );
   --font-scale: 1.333;
   --font-base: 1rem;
@@ -157,6 +188,7 @@
   --ff-inter: "inter", system-ui, sans-serif;
   --ff-ibm-plex-sans: "ibm-plex-sans", system-ui, sans-serif;
   --ff-open-sans: "open-sans", system-ui, sans-serif;
+  --ff-playfair-display: "playfair-display", system-ui, serif;
   color-scheme: light dark;
   color: var(--color-black-1);
   background-color: var(--color-white-1);
@@ -170,6 +202,7 @@ a {
 
 body {
   font-family: var(--ff-inter);
+  color: var(--black-100);
   margin: 0;
   display: flex;
   justify-content: center;
@@ -211,10 +244,10 @@ button:focus-visible {
 .gc-purple {
   background-color: var(--color-14);
   background-image: linear-gradient(
-    to right,
-    var(--brand-color-1),
-    var(--brand-color-2),
-    var(--brand-color-3)
+    15deg,
+    var(--brand-white),
+    var(--soft-brand-grey),
+    #e71a1a
   );
   background-size: 100% 100%;
   background-repeat: no-repeat;

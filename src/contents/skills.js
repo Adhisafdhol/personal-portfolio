@@ -1,16 +1,26 @@
 import nodejs from "../assets/images/nodejs-icon.svg";
 import express from "../assets/images/express-icon.svg";
 import postgresql from "../assets/images/postgresql-icon.svg";
-import mongodb from "../assets/images/mongodb-icon.svg";
 import react from "../assets/images/react-icon.svg";
 import figma from "../assets/images/figma-icon.svg";
 import inkscape from "../assets/images/inkscape-icon.svg";
 import git from "../assets/images/git-icon.svg";
 import jest from "../assets/images/jest-icon.svg";
-import bash from "../assets/images/bash-icon.svg";
-import webpack from "../assets/images/webpack-icon.svg";
+import socketIO from "../assets/images/socketio-icon.svg";
+import prisma from "../assets/images/prisma-icon.svg";
+import nextJS from "../assets/images/nextjs-icon.svg";
+import tailwindCSS from "../assets/images/tailwindcss-icon.svg";
+import supabase from "../assets/images/supabase-icon.svg";
 
 const skills = [
+  {
+    name: "Socket.IO",
+    icon: socketIO,
+  },
+  {
+    name: "Supabase",
+    icon: supabase,
+  },
   {
     name: "Node.JS",
     icon: nodejs,
@@ -24,24 +34,20 @@ const skills = [
     icon: postgresql,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Webpack",
-    icon: webpack,
+    name: "Prisma",
+    icon: prisma,
   },
   {
     name: "React",
     icon: react,
   },
   {
-    name: "Figma",
-    icon: figma,
+    name: "Next.JS",
+    icon: nextJS,
   },
   {
-    name: "Inkscape",
-    icon: inkscape,
+    name: "Tailwind.CSS",
+    icon: tailwindCSS,
   },
   {
     name: "Git",
@@ -52,8 +58,12 @@ const skills = [
     icon: jest,
   },
   {
-    name: "Bash",
-    icon: bash,
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "Inkscape",
+    icon: inkscape,
   },
 ];
 

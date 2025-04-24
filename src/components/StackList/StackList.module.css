@@ -1,0 +1,71 @@
+.techStack {
+  height: min-content;
+  box-sizing: border-box;
+  width: 385px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  background-image: var(--brand-gradient-up);
+  flex-wrap: wrap;
+  padding: 64px;
+  border-radius: 16px;
+  box-shadow: 10px 10px 0 0 var(--brand-3);
+}
+
+.iconContainer {
+  background-color: var(--brand-white);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 1599px) {
+  .techStack {
+    width: 320px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .iconContainer {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .techStack {
+    width: 100%;
+    gap: 24px;
+    padding: 48px;
+  }
+
+  .iconContainer {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .techStack {
+    box-shadow: 6px 6px var(--brand-3);
+  }
+}

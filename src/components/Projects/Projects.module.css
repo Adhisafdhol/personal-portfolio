@@ -1,20 +1,17 @@
-:root {
-  --img-height: 360px;
-  --img-width: 640px;
-}
-
 .projects {
   display: flex;
   flex-direction: column;
+  background-color: var(--brand-white);
 }
 
 .projectsHeading {
   padding: 0 64px;
   margin: 96px 0;
-  font-family: var(--f-ibm-plex-sans);
+  font-family: var(--ff-ibm-plex-sans);
   line-height: 1.25;
   font-size: var(--h3);
   color: var(--color-black-1);
+  font-weight: 300;
   text-align: start;
 }
 
@@ -24,274 +21,15 @@
   gap: 192px;
 }
 
-.battleshipContainer {
-  box-sizing: border-box;
-  display: flex;
-  background: linear-gradient(to right, #e71a1a, #000000);
-  margin: 0 64px;
-  padding: 0 96px;
-  border-radius: 16px;
-}
-
-.battleship {
-  width: min(calc(450px + 30vw), 90vw);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 32px;
-  padding: 96px 64px;
-  background-color: var(--color-white-1);
-}
-
-.battleshipHeading {
-  font-size: var(--h4);
-  line-height: 1.25;
-  margin: 0;
-  font-family: var(--ff-ibm-plex-sans);
-}
-
-.projectDescription {
-  text-align: start;
-  font-size: var(--h6);
-  font-family: var(--ff-inter);
-  line-height: 1.5;
-  margin: 0;
-  color: var(--color-15);
-}
-
-.battleshipImageContainer {
-  position: relative;
-  padding-right: calc(var(--img-width) / 3.33);
-  padding-bottom: calc(var(--img-height) / 3.75);
-}
-
-.imageItem {
-  width: var(--img-width);
-  height: var(--img-height);
-  border-radius: 16px;
-}
-
-.battleshipImageItemTwo {
-  composes: imageItem;
-  position: absolute;
-  top: calc(var(--img-height) / 3.33);
-  left: calc(var(--img-width) / 3.75);
-  box-shadow: -16px -16px var(--color-white-1);
-}
-
-.img {
-  border-radius: inherit;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.jyronueContainer {
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(to right, #f4f5f5, #bedae3);
-}
-
-.jyronue {
-  background: conic-gradient(from 270deg, #f4f5f5, #bedae3);
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding: 96px 64px;
-}
-
-.jyronueHeading {
-  text-align: start;
-  font-size: var(--h4);
-  line-height: 1.25;
-  margin: 0;
-  font-family: "ibm-plex-sans", sans-serif;
-  font-weight: 400;
-  color: #191919;
-}
-
-.jyronueImageContainer {
-  align-self: center;
-  border-radius: 0;
-  position: relative;
-  margin-top: calc(var(--img-width) / 3.75);
-  padding-right: calc(var(--img-width) / 1.33);
-  padding-bottom: calc(var(--img-height) / 2.14);
-}
-
-.jyronueImageItem {
-  composes: imageItem;
-  border-radius: 0;
-}
-
-.jyronueImageItemTwo {
-  composes: jyronueImageItem;
-  position: absolute;
-  left: calc(var(--img-width) / 2.66);
-  top: calc(var(--img-height) / -3.75);
-}
-
-.jyronueImageItemThree {
-  composes: jyronueImageItem;
-  position: absolute;
-  left: calc(var(--img-width) / 1.33);
-  top: calc(var(--img-height) / 2.14);
-}
-
-.octoconvoContainer {
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(to bottom, #f3f1f7 70%, #ddd6e8);
-}
-
-.octoconvo {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding: 96px 64px;
-}
-
-.octoconvoHeading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: start;
-  font-size: var(--h4);
-  line-height: 1.25;
-  margin: 0;
-  color: #440099;
-  font-family: var(--ff-inter);
-  font-weight: 700;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-left: 1em;
-  text-indent: -0.7em;
-}
-
-.li::before {
-  content: "● ";
-  color: #6229a9;
-}
-
-.battleshipLi {
-  composes: li;
-}
-
-.jyronueLi {
-  composes: li;
-}
-
-.jyronueLi::before {
-  color: #126c85;
-}
-
-.battleshipLi::before {
-  color: #e71a1a;
-}
-
-.octoconvoList::marker {
-  color: #6229a9;
-}
-
-.octoconvoH3 {
-  font-size: var(--h5);
-  text-align: start;
-  color: #6229a9;
-}
-
-.battleshipH3 {
-  composes: octoconvoH3;
-  color: #e71a1a;
-}
-
-.jyronueH3 {
-  composes: octoconvoH3;
-  color: #126c85;
-}
-
-.li {
-  font-size: var(--h6);
-  text-align: start;
-}
-
-.octoconvoImageItem {
-  width: min(calc(640px + 10vw), 70vw);
-  box-sizing: border-box;
-  height: auto;
-  border-radius: 0;
-}
-
-@media screen and (max-width: 1599px) {
-  :root {
-    --img-width: 426px;
-    --img-height: 240px;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .projectList {
     gap: 160px;
   }
-
-  :root {
-    --img-width: 360px;
-    --img-height: 200px;
-  }
-
-  .battleshipContainer {
-    justify-content: center;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  .battleshipImageContainer {
-    position: relative;
-  }
-
-  .battleshipImageItemTwo {
-    composes: imageItem;
-    position: absolute;
-    box-shadow: -16px -16px var(--color-white-1);
-  }
-
-  .jyronueImageContainer {
-    border-radius: 0;
-    position: relative;
-  }
-
-  .jyronueImageItem {
-    composes: imageItem;
-    border-radius: 0;
-  }
-
-  .jyronueImageItemTwo {
-    composes: jyronueImageItem;
-    position: absolute;
-  }
-
-  .jyronueImageItemThree {
-    composes: jyronueImageItem;
-    position: absolute;
-  }
 }
 
 @media screen and (max-width: 799px) {
-  :root {
-    --img-width: 231px;
-    --img-height: 130px;
-  }
-
   .projectList {
     gap: 96px;
-  }
-
-  .projectsHeading {
-    margin: 32px 0;
   }
 
   .imageItem {
@@ -299,74 +37,13 @@
   }
 
   .projectsHeading {
-    padding: 0 16px;
-  }
-
-  .jyronue,
-  .octoconvo,
-  .battleship {
-    padding: 64px 32px;
-  }
-
-  .battleshipContainer {
-    padding: 0;
-    margin: 0;
-  }
-
-  .jyronueImageItem {
-    composes: imageItem;
-    border-radius: 0;
-  }
-
-  .battleshipImageItemTwo {
-    composes: imageItem;
-    position: absolute;
-    box-shadow: -8px -8px var(--color-white-1);
-  }
-
-  .jyronueImageContainer {
-    border-radius: 0;
-  }
-
-  .octoconvoImageItem {
-    box-sizing: border-box;
-    height: auto;
-    border-radius: 0;
+    padding: 0 32px;
+    margin: 32px 0;
   }
 }
 
-@media screen and (max-width: 499px) {
-  :root {
-    --img-width: 212px;
-    --img-height: 120px;
-  }
-
-  .projectList {
-    gap: 64px;
-  }
-
-  .jyronueImageItem {
-    composes: imageItem;
-    border-radius: 0;
-  }
-
-  .battleship {
-    width: 95vw;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  :root {
-    --img-width: 180px;
-    --img-height: 102px;
-  }
-
-  .projectList {
-    gap: 64px;
-  }
-
-  .jyronueImageItem {
-    composes: imageItem;
-    border-radius: 0;
+@media screen and (max-width: 599px) {
+  .projectsHeading {
+    padding: 0 24px;
   }
 }

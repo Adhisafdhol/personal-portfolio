@@ -4,7 +4,7 @@ import skills from "../../contents/skills";
 const Skills = () => {
   return (
     <div className={styles.skills}>
-      <h2 className={styles.mainSkillHeading}>Skills</h2>
+      <h2 className={styles.mainSkillHeading}>Tech-Stack</h2>
       <div className={styles.mainSkill}>
         <div className={styles.mainSkillItem}>
           <div className={styles.skillIconContainer}>

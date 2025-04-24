@@ -2,7 +2,7 @@ import { useRef } from "react";
 import "./App.css";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
-import Projects from "./components/Projects/Project";
+import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 
 function App() {
@@ -17,18 +17,20 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <Skills />
-        <Projects />
-      </main>
-      <footer className="footer" ref={footerRef}>
-        <div className="f-bg">
-          <Contact toggleContainerClass={toggleContainerClass} />
-          <p className="copyrightText">
-            © Copyright Adhistira Afdhol 2024. All rights reserved
-          </p>
-        </div>
-      </footer>
+      <div className="container-main-footer">
+        <main>
+          <Skills />
+          <Projects />
+        </main>
+        <footer className="footer" ref={footerRef}>
+          <div className="f-bg">
+            <Contact toggleContainerClass={toggleContainerClass} />
+            <p className="copyrightText">
+              © Copyright Adhistira Afdhol 2024. All rights reserved
+            </p>
+          </div>
+        </footer>
+      </div>
     </>
   );
 }
