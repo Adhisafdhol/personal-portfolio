@@ -32,6 +32,14 @@
 
 @font-face {
   font-family: "inter";
+  src: url("./assets/fonts/inter/inter-extralight-webfont.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
   src: url("./assets/fonts/inter/inter-medium-webfont.woff2") format("woff2"),
     url("./assets/fonts/inter/inter-medium-webfont.woff") format("woff");
   font-weight: 500;

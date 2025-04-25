@@ -28,7 +28,7 @@
   font-family: var(--ff-inter);
   line-height: 1.5;
   text-align: start;
-  color: var(--color-black-2);
+  color: var(--black-100);
   margin: 0;
 }
 
@@ -39,10 +39,11 @@
 
 .email {
   font-size: var(--font-base);
-  font-family: var(--ff-inter);
+  font-family: var(--ff-open-sans);
   line-height: 1.5;
   text-align: start;
-  color: var(--color-black-2);
+  color: var(--black-100);
+  font-style: italic;
 }
 
 .email:hover {
