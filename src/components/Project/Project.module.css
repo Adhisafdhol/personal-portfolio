@@ -141,7 +141,7 @@
 .linkLi {
   display: flex;
   width: 100%;
-  box-shadow: 0 10px var(--brand-3);
+  box-shadow: 0 8px var(--brand-3);
   border-radius: 1000px;
 }
 

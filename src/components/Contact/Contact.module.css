@@ -54,8 +54,10 @@
   gap: 32px;
   align-items: center;
   padding: 32px 64px;
+  font-family: var(--ff-ibm-plex-sans);
+  font-weight: 400;
   background-color: var(--color-15);
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 16px 16px 0;
   transition: all 300ms ease-out;
 }
 

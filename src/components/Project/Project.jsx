@@ -40,7 +40,7 @@ const Project = ({ project }) => {
                         <img
                           className={styles.icon}
                           src={link.icon}
-                          alt="github"
+                          alt={link.name}
                         />
                       )}
                       {link.name}

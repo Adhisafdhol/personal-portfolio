@@ -16,8 +16,8 @@ import typescript from "../assets/images/typescript-icon.svg";
 import github from "../assets/images/github-black-icon.svg";
 import octoconvoThumbnail from "../assets/images/octoconvo-thumbnail.png";
 import jyronueThumbnail from "../assets/images/jyronue-thumbnail-1.png";
-import battleshipThumbnail from "../assets//images/battleship-thumbnail-1.png";
-4;
+import battleshipThumbnail from "../assets/images/battleship-thumbnail-1.png";
+import live from "../assets/images/live-icon.svg";
 
 const skills = {
   socketIO: {
@@ -184,6 +184,7 @@ const projects = [
       {
         name: "Live",
         url: "https://adhisafdhol.github.io/battleship/",
+        icon: live,
       },
       {
         name: "Github",

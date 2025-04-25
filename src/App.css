@@ -71,13 +71,25 @@ footer {
   font-size: var(--font-base);
   line-height: 1.5;
   font-family: "open-sans", sans-serif;
-  color: var(--color-black-2);
+  color: var(--brand-white);
   margin: 0;
+  padding: 32px;
+}
+
+.footer-form-container {
+  background-image: var(--brand-gradient-up);
 }
 
 @media screen and (max-width: 1199px) {
   .copyrightText {
     font-size: var(--font-small);
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .copyrightText {
+    font-size: var(--font-small);
+    padding: 32px 24px;
   }
 }
 

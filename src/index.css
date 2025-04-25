@@ -176,6 +176,7 @@
   );
   --font-scale: 1.333;
   --font-base: 1rem;
+  --p: var(--font-base);
   --font-small: calc(var(--font-base) / var(--font-scale));
   --h6: calc(var(--font-base) * var(--font-scale));
   --h5: calc(var(--h6) * var(--font-scale));

@@ -4,6 +4,7 @@ import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+import ContactForm from "./components/ContactForm/ContactForm.jsx";
 
 function App() {
   const footerRef = useRef(null);
@@ -25,9 +26,12 @@ function App() {
         <footer className="footer" ref={footerRef}>
           <div className="f-bg">
             <Contact toggleContainerClass={toggleContainerClass} />
-            <p className="copyrightText">
-              © Copyright Adhistira Afdhol 2024. All rights reserved
-            </p>
+            <div className="footer-form-container">
+              <ContactForm />
+              <p className="copyrightText">
+                © Copyright Adhistira Afdhol 2025. All rights reserved
+              </p>
+            </div>
           </div>
         </footer>
       </div>
