@@ -254,8 +254,8 @@ button:focus-visible {
   background-color: var(--color-14);
   background-image: linear-gradient(
     15deg,
-    var(--brand-white),
     var(--soft-brand-grey),
+    var(--soft-brand-black),
     #e71a1a
   );
   background-size: 100% 100%;

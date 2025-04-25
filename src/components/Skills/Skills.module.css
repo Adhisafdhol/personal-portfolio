@@ -220,13 +220,13 @@
   }
 
   .skillItem {
-    width: calc(var(--h6) * 1.15);
-    height: calc(var(--h6) * 1.15);
+    width: 24px;
+    height: 24px;
   }
 
   .icon {
-    width: calc(var(--h5) * 1.15);
-    height: calc(var(--h5) * 1.15);
+    width: 24px;
+    height: 24px;
   }
 
   .mainSkillText {

@@ -11,14 +11,17 @@ const Contact = ({ toggleContainerClass }) => {
         <h2 className={styles.contactHeading}>
           I am currently available for hire
         </h2>
-        <p className={styles.contactText}>
-          If you’re looking for a developer let’s chat
-        </p>
-        <address className={styles.address}>
-          <a className={styles.email} href="mailto:adhisafdhal@gmail.com">
-            adhisafdhal@gmail.com
-          </a>
-        </address>
+        <div className={styles.intro}>
+          <p className={styles.contactText}>
+            If you’re looking for a developer let’s chat
+          </p>
+          <address className={styles.address}>
+            <a className={styles.email} href="mailto:adhisafdhal@gmail.com">
+              adhisafdhal@gmail.com
+            </a>
+          </address>
+        </div>
+
         <button
           onTouchStart={() => toggleContainerClass("gc-purple")}
           onTouchEnd={() => toggleContainerClass("gc-purple")}

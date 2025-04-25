@@ -24,8 +24,12 @@ function App() {
           <Projects />
         </main>
         <footer className="footer" ref={footerRef}>
-          <div className="f-bg">
-            <Contact toggleContainerClass={toggleContainerClass} />
+          <div>
+            <div className="f-bg">
+              {" "}
+              <Contact toggleContainerClass={toggleContainerClass} />
+            </div>
+
             <div className="footer-form-container">
               <ContactForm />
               <p className="copyrightText">

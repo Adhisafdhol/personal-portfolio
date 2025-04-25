@@ -37,6 +37,12 @@
   justify-content: start;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .email {
   font-size: var(--font-base);
   font-family: var(--ff-open-sans);
@@ -135,7 +141,7 @@
   }
 
   .contactHeading {
-    font-size: var(--h4);
+    font-size: var(--h3);
   }
 
   .contactText {
@@ -178,10 +184,6 @@
     gap: 16px;
   }
 
-  .contactHeading {
-    font-size: var(--h4);
-  }
-
   .contactText {
     font-size: var(--h6);
   }
@@ -191,7 +193,7 @@
   }
 
   .githubLink {
-    font-size: var(--font-base);
+    border-radius: 2px;
   }
 
   .githubLogo {
@@ -210,22 +212,18 @@
   .contactContainer {
     gap: 8px;
     margin: 0 8px;
-    padding: 96px 8px;
+    padding: 96px 24px;
   }
 
   .contact {
-    gap: 16px;
+    gap: 24px;
   }
 
   .contactHeading {
-    font-size: var(--h4);
+    font-size: var(--h1);
   }
 
   .contactText {
-    font-size: var(--font-base);
-  }
-
-  .githubButton {
-    padding: 8px 16px;
+    font-size: var(--h6);
   }
 }

@@ -54,18 +54,19 @@
   }
 
   .iconContainer {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
   }
 
   .icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 @media screen and (max-width: 499px) {
   .techStack {
     box-shadow: 6px 6px var(--brand-3);
+    padding: 32px;
   }
 }
