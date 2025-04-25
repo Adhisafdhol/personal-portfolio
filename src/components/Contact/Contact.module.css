@@ -25,7 +25,7 @@
 
 .contactText {
   font-size: var(--h5);
-  font-family: "open-sans", sans-serif;
+  font-family: var(--ff-inter);
   line-height: 1.5;
   text-align: start;
   color: var(--color-black-2);
@@ -39,7 +39,7 @@
 
 .email {
   font-size: var(--font-base);
-  font-family: "open-sans", sans-serif;
+  font-family: var(--ff-inter);
   line-height: 1.5;
   text-align: start;
   color: var(--color-black-2);
@@ -59,6 +59,7 @@
   background-color: var(--color-15);
   border-radius: 0 16px 16px 0;
   transition: all 300ms ease-out;
+  border: none;
 }
 
 @keyframes gradient {
@@ -97,7 +98,7 @@
 .githubLink {
   color: var(--color-white-1);
   font-size: var(--h4);
-  font-family: var(--ff-open-sans);
+  font-family: var(--ff-ibm-plex-sans);
   line-height: 1.25;
   font-weight: 400;
   margin: 0;
