@@ -50,8 +50,6 @@
 }
 
 .li {
-  display: flex;
-  gap: 1em;
   text-align: start;
 }
 
