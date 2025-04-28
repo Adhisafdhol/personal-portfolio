@@ -92,7 +92,7 @@ const projects = [
       " and users connectivity with friend system.",
     features: [
       "User authentication, create account and login.",
-      "Community creation, search, update, and deletion",
+      "Community creation, search, update, and deletion.",
       "Real-time profile update.",
       "Real-time messages.",
       "Share images.",
@@ -128,7 +128,7 @@ const projects = [
   {
     heading: "Jyronue",
     description:
-      "A ful-stack image-sharing social media application with modern minimalistic responsive design.",
+      "A full-stack image-sharing social media web application with modern minimalistic responsive design.",
     features: [
       "User authentication, create account and login.",
       "Create posts, comments, like posts, like comments, and follow other users.",
@@ -170,8 +170,8 @@ const projects = [
   {
     heading: "Battleship",
     description:
-      "Battleship is a web game application created fully with vanilla Javascript." +
-      "It is developed with TDD architecture.",
+      "Battleship is a web game application created fully with vanilla Javascript," +
+      " and it is developed with TDD.",
     features: [
       "Play against AI.",
       "Drag and drop API implementation to let players place their ships.",

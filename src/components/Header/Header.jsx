@@ -72,8 +72,8 @@ function Header() {
           <div ref={introRef} className={styles.introContainer}>
             <p className={styles.intro}>
               &emsp; A Developer who combines creativity with pragmatism, design
-              beautiful efficient software that works well and pleasing to the
-              eyes.
+              beautiful efficient software that works well and is pleasing to
+              the eyes.
             </p>
             <p className={styles.intro}>
               I am a fullstack developer who focuses on creating clean
