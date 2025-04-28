@@ -4,16 +4,37 @@ const serviceId = import.meta.env.VITE_SERVICE_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 import emailjs from "@emailjs/browser";
+import { useRef, useState, useEffect } from "react";
 
 const ContactForm = () => {
+  const formRef = useRef(null);
   const methods = useForm();
   const {
+    reset,
     handleSubmit,
     register,
     formState: { errors },
   } = methods;
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [resetForm, setResetForm] = useState(false);
+  const [errorMSG, setErrorMSG] = useState("");
+
+  useEffect(() => {
+    if (resetForm) {
+      reset({
+        name: "",
+        email: "",
+        message: "",
+      });
+
+      setResetForm(false);
+      formRef.current.reset();
+    }
+  }, [resetForm, reset]);
 
   const onSubmit = async (data) => {
+    setIsSubmitting(true);
+    setErrorMSG("");
     // code fragment
     const templateParams = {
       name: data.name,
@@ -34,9 +55,13 @@ const ContactForm = () => {
     emailjs.send(serviceId, templateId, templateParams).then(
       (response) => {
         console.log("SUCCESS!", response.status, response.text);
+        setResetForm(true);
+        setIsSubmitting(false);
       },
       (error) => {
         console.log("FAILED...", error);
+        setErrorMSG("Failed to send the message.");
+        setIsSubmitting(false);
       }
     );
   };
@@ -47,15 +72,14 @@ const ContactForm = () => {
         className={styles.container}
         method="POST"
         onSubmit={handleSubmit(onSubmit)}
+        ref={formRef}
       >
         <h2 className={styles.heading}>Contact</h2>
         <div className={styles.inputContainer}>
           <label className={styles.label} htmlFor="name">
             Full Name
           </label>
-          {errors.name && (
-            <div className={styles.err}>{errors.name.message}</div>
-          )}
+          {errors.name && <p className={styles.err}>{errors.name.message}</p>}
           <input
             className={styles.input}
             id="name"
@@ -73,9 +97,7 @@ const ContactForm = () => {
           <label className={styles.label} htmlFor="email">
             Email
           </label>
-          {errors.email && (
-            <div className={styles.err}>{errors.email.message}</div>
-          )}
+          {errors.email && <p className={styles.err}>{errors.email.message}</p>}
           <input
             className={styles.input}
             id="email"
@@ -93,7 +115,7 @@ const ContactForm = () => {
             Message
           </label>
           {errors.message && (
-            <div className={styles.err}>{errors.message.message}</div>
+            <p className={styles.err}>{errors.message.message}</p>
           )}
           <textarea
             rows="8"
@@ -112,8 +134,17 @@ const ContactForm = () => {
             })}
           ></textarea>
         </div>
+
+        {errorMSG && (
+          <div className={styles.inputContainer}>
+            <p className={styles.err}>{errorMSG}</p>{" "}
+          </div>
+        )}
+
         <div className={styles.buttonContainer}>
-          <button className={styles.button}>Submit</button>
+          <button className={styles.button}>
+            {isSubmitting ? "submitting..." : "Submit"}
+          </button>
         </div>
       </form>
     </FormProvider>
